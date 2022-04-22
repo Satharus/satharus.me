@@ -1,0 +1,14 @@
+---
+layout: articles
+title: Cybersecurity
+article:
+  show_cover: true
+  type: normal
+  show_title: true
+---
+<div>
+{% for post in site.categories.Cybersecurity %}
+ <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
+</div>

@@ -1,0 +1,69 @@
+# testSideBar:
+#   - title: Categories
+#     children:
+#       - title: Test Category
+#         url: /404.html
+#       - title: Category 2
+#         url: /about.html
+header:
+  - titles:
+      # @start locale config
+      en      : &EN      Tech/CS 
+      en-GB   : *EN      
+      en-US   : *EN      
+      en-CA   : *EN      
+      en-AU   : *EN      
+      # @end locale config
+    url: /categories/tech-cs.html
+
+  - titles:
+      # @start locale config
+      en      : &EN      Cybersecurity 
+      en-GB   : *EN      
+      en-US   : *EN      
+      en-CA   : *EN      
+      en-AU   : *EN      
+      # @end locale config
+    url: /categories/cybersecurity.html
+
+  - titles:
+       # @start locale config
+      en      : &EN      Misc. 
+      en-GB   : *EN      
+      en-US   : *EN      
+      en-CA   : *EN      
+      en-AU   : *EN      
+      # @end locale config
+    url: /categories/misc.html   
+  
+  - titles:
+      # @start locale config
+      en      : &EN      About
+      en-GB   : *EN      
+      en-US   : *EN      
+      en-CA   : *EN      
+      en-AU   : *EN      
+      # @end locale config
+    url: /about.html
+
+  - titles:
+      # @start locale config
+      en      : &EN     My Work 
+      en-GB   : *EN      
+      en-US   : *EN      
+      en-CA   : *EN      
+      en-AU   : *EN      
+      # @end locale config
+    url: /mywork.html
+
+
+  - titles:
+      # @start locale config
+      en      : &EN      Archive
+      en-GB   : *EN      
+      en-US   : *EN      
+      en-CA   : *EN      
+      en-AU   : *EN      
+      # @end locale config
+    url: /archive.html
+
