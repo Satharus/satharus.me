@@ -36,5 +36,5 @@ Here are some other posts I've published elsewhere:
 ## My GitHub Stats
 
 
-[![Satharus's github stats](https://github-readme-stats.vercel.app/api?username=Satharus&show_icons=true&theme=nord&include_all_commits=true&count_private=true)](https://github.com/Satharus?tab=repositories) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Satharus&langs_count=6&layout=compact&theme=nord&hide=html,javascript,scss&exclude_repo=SecurityPackage,Image-quantization)](https://github.com/Satharus?tab=repositories)
+[![Satharus's github stats](https://github-readme-stats.vercel.app/api?username=Satharus&show_icons=true&theme=gruvbox&include_all_commits=true&count_private=true)](https://github.com/Satharus?tab=repositories) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Satharus&langs_count=6&layout=compact&theme=gruvbox&hide=html,javascript,scss&exclude_repo=SecurityPackage,Image-quantization)](https://github.com/Satharus?tab=repositories)
 
