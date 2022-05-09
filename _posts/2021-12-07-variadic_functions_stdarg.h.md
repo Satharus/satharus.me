@@ -48,7 +48,7 @@ int printf(const char *format, ...)
 
 For example, if you want to print an integer variable containing a sum of numbers using `printf`, you can do the following:  `printf("The sum is: %d", sum)`.
 
-If you want to know about other format specifiers [here](https://www.tutorialspoint.com/format-specifiers-in-c).
+If you want to know about other format specifiers, check them out [here](https://www.tutorialspoint.com/format-specifiers-in-c).
 
 You can also include multiple variables in the same `printf` call. For example: 
 
