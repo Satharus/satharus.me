@@ -127,7 +127,7 @@ Freedom Score: **4/4**.
 
 ⚠️ Freeware restrictions depend on what the developer wants to set.
 
-⚠️ You're allowed to improve Source-Available software but not allowed to redeistricute. Also, its unlimited use is for the devloper to decide.
+⚠️ You're allowed to improve Source-Available software but not allowed to redistribute. Also, its unlimited use is for the developer to decide.
 
 # Conclusion
 
@@ -141,7 +141,7 @@ Thank you all for reading, I hope you learned something new.
 
 It’s only fair to end this post with Richard Stallman’s talk about Free Software.
 
-Just a side note: I personally am not a fan of Richard Stallman himself, but he made some solid points in this talk.
+Just a side note: I personally am not a fan of Richard Stallman himself and a lot of his views, but he made some solid points in this talk.
 
 <div>{%- include extensions/youtube.html id='Ag1AKIl_2GM' -%}</div>
 
