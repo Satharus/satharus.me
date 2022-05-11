@@ -11,6 +11,11 @@
 <meta property="og:title" content="{{ page.title }} - Technoir - Blog of Satharus">
 <meta property="og:image" content="{{ page.cover }}"/>
 
+<meta name="twitter:creator" content="{{ page.author }}"/>
+<meta name="twitter:title" content="{{ page.title }} - Technoir - Blog of Satharus">
+<meta name="twitter:description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.description }}{%- endif -%}">
+<meta name="twitter:image" content="{{ page.cover }}"/>
+
 {%- assign _paths_rss = site.paths.rss | default: site.data.variables.default.paths.rss -%}
 {%- include snippets/get-nav-url.html path=_paths_rss -%}
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ __return }}">
