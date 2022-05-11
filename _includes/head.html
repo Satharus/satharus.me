@@ -9,13 +9,13 @@
 <link rel="canonical" href="{%- include snippets/page-url.html -%}">
 
 <meta property="og:title" content="{{ page.title }} - Technoir - Blog of Satharus">
-<meta property="og:image" content="{{ page.cover }}"/>
+<meta property="og:image" content="{{ site.url }}{{ page.cover }}"/>
 
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content="{{ page.author }}"/>
 <meta name="twitter:title" content="{{ page.title }} - Technoir - Blog of Satharus">
 <meta name="twitter:description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.description }}{%- endif -%}">
-<meta name="twitter:image" content="{{ site.url }}/{{ page.cover }}"/>
+<meta name="twitter:image" content="{{ site.url }}{{ page.cover }}"/>
 
 {%- assign _paths_rss = site.paths.rss | default: site.data.variables.default.paths.rss -%}
 {%- include snippets/get-nav-url.html path=_paths_rss -%}
