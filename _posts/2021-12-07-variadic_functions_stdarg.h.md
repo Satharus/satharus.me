@@ -210,9 +210,3 @@ int main()
 Thanks a lot for reading! I hope you learned something from this post or at least found it interesting. 
 
 2021 has been a very busy year for me and I haven't had the time to properly write anything in quite some time so I am glad I was able to write this one, I hope you enjoyed reading it as much as I enjoyed writing it! Share it with any of your friends who may find it interesting.
-
-
-<meta property='og:title' content='Technoir - Blod of Satharus'/>
-<meta property='og:image' content='https://satharus.me/assets/images/variadic_functions_stdarg.h/variadic_cover.jpgi'/>
-<meta property='og:image:width' content='1200' />
-<meta property='og:image:height' content='627' />
