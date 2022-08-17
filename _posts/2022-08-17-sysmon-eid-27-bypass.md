@@ -3,7 +3,7 @@ layout: article
 title: "Sysmon EID 27 Bypass" 
 categories: [Cybersecurity]
 author: Ahmed Elmayyah
-tags: [Cybersecurity, Programming, C, Exploitation]
+tags: [Cybersecurity, Programming, C, Exploitation, Bypass]
 mode: normal 
 header:
   theme: dark
@@ -44,7 +44,7 @@ Taking the simple config file from the post for demonstration purposes, I instal
 
 I also wrote a very simple executable which prints out "Catch me if you can, Sysmon!". This is the executable that I'm going to try to drop and run from the Downloads folder. This executable as a start is placed in Documents\App.exe.
 
-In an actual attack scenario, the file would be recieved from a remote server or perhaps embedded in the file itself. But this is for demonstration only so it shouldn't really matter as Sysmon doesn't care where the file originated. All it cares about is the writing of an executable to the specified folders.
+In an actual attack scenario, the file would be recieved from a remote server or perhaps embedded in the file itself. However, this is for demonstration only so it shouldn't really matter as Sysmon doesn't care where the file originated. All it cares about is the writing of an executable to the folders specified in the rule.
 {:.info}
 
 
@@ -87,7 +87,7 @@ int main()
 
 
 {: style="text-align:center"}
-![Sysmon Filter](/assets/images/sysmon-eid-27-bypass/WithoutBypass.png)
+![Sysmon Blocking](/assets/images/sysmon-eid-27-bypass/WithoutBypass.png)
 {: style="text-align:center"}
 As expected, Sysmon detects the creation of the file and blocks it.
 
@@ -97,15 +97,15 @@ As expected, Sysmon detects the creation of the file and blocks it.
 ## A little bit of background
 If you don't know, file formats typically have a [sequence of bytes](https://en.wikipedia.org/wiki/List_of_file_signatures) known as file signatures, file headers, or more commonly, Magic Bytes. They're used by operating systems and programs to detect file formats even if their names don't contain the file extension.
 
-The Windows Portable Executable format uses a file header/signature of MZ (the bytes 4D and 5A). That includes all executables, including .exe, .dll, .sys, etc...
+The Windows Portable Executable format uses a file header/signature of `MZ` (the bytes `0x4D` and `0x5A`). That includes all executables, including .exe, .dll, .sys, etc...
 
 ## Primal instinct
 My very first thought was to zero out the MZ header and try to execute the file as is. That way Sysmon wouldn't detect it but I'd still be able to execute it just fine. However, that failed as `CreateProcess()` failed to execute a binary that doesn't have an MZ header. Running the executable from PowerShell or the command line prompt didn't work either. Interestingly enough, this proved some points:
- - Sysmon relied on the MZ header to detect an executable, as writing an entire binary without "MZ" worked just fine. 
- - Sysmon doesn't rely on the bytes "MZ" alone as when writing those to a file it doesn't detect anything.
+ - Sysmon relies on the MZ header to detect an executable, as writing an entire binary without "MZ" worked just fine. 
+ - Sysmon doesn't rely on the bytes `MZ` alone as when writing those to a file it doesn't detect anything.
 
 
-So it seems like Sysmon relies on "MZ" alongside _something_ else to detect that it is an executable.
+So, it seems like Sysmon relies on `MZ` alongside _something_ else to detect that it is an executable.
 
 ## The Actual bypass
 Puting two and two together, what if we just wrote the file on two stages. We can write the string "MZ" first, and then write the rest of the file.
@@ -162,6 +162,11 @@ int main()
 }
 ```
 
+{: style="text-align:center"}
+![Sysmon Blocking](/assets/images/sysmon-eid-27-bypass/WithBypass.png)
+{: style="text-align:center"}
+Sysmon doesn't detect the creation of the file and the process is allowed to execute.
+
 This worked flawlessly. 
 
 Simple? Yes. 
@@ -172,3 +177,5 @@ Effective? Definitely!
 
 
 Thanks a lot for reading! As usual, I hope you learned something or at least found it interesting!
+
+If you enjoyed it, please share it with your friends that are interested in simple detection bypasses.
