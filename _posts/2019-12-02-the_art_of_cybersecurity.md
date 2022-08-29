@@ -21,7 +21,7 @@ You put on your black hoodie, install Kali Linux, change your Facebook cover pho
 
 <!--more-->
 
-Cybersecurity isn’t like it is shown in the average Hollywood show or move. It is an art, it consists of many smaller forms of art. I’ll talk about a few of them today.
+Cybersecurity isn’t like it is shown in the average Hollywood show or movie. It is an art, it consists of many smaller forms of art. I’ll talk about a few of them today.
 
 If we strip everything down, cybersecurity is basically “protecting computer systems from theft or damage”. Sounds simple enough right?
 
