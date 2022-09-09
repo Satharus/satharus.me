@@ -39,7 +39,7 @@ Throughout all of history, all of the progress that humans have ever made has be
 
 Scientists like Tesla, Einstein, and many others picked up on the work of the scientists who came before them. None of the progress would’ve happened if all of them just sat throughout their lives and said “Meh, our existence is meaningless anyway.”.
 
-Philosophers, writers, musicians, chefs, great generals, and basically anyone who has contributed with even 0.001% of their life to the world, has helped make the progress we’ve made by today somehow. Even destructive people like Hitler and Stalin, they left us valuable lessons that we’ve learned from, thus taking precautions.
+Philosophers, writers, artists, musicians, chefs, great generals, and basically anyone who has contributed with even 0.001% of their life to the world, has helped make the progress we’ve made by today somehow. Even _destructive_ people like Hitler and Stalin, they left us valuable lessons that we’ve learned from, thus taking precautions to make sure the things they did never happen again.
 
 That’s why I live by 4 major rules:
 
@@ -48,7 +48,7 @@ That’s why I live by 4 major rules:
 - Teach people what you know, and share your knowledge.
 - Enjoy the little things you can enjoy.
 
-Your contribution doesn’t have to be towards science, it could be towards anything. Teach people what you know or help those who are less fortunate, contribute to anything you can contribute to and help humanity make more progress.
+Your contribution doesn’t have to be towards science, it could be towards anything: music, art, cooking, philosophy, sports, pretty much anything you want. Teach people what you know or help those who are less fortunate, contribute to anything you can contribute to and help humanity make more progress.
 
 
 

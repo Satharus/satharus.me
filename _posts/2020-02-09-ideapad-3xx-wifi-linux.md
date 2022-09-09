@@ -49,7 +49,7 @@ My specific chip is the rtl8821ae.
 You can find out which chip you have by running the following command: 
 
 ```sh
-lspci | grep -i wireless
+$ lspci | grep -i wireless
 ```
 
 {: style="text-align:center"}
@@ -83,38 +83,38 @@ So, just to get a basic understanding of how drivers work in Linux, there are 2 
 
 That’s a very abstract simplification so don’t @ me.
 
-You can find out information about a kernel module by running the command modinfo.
+You can find out information about a kernel module by running the command `modinfo`.
 
 We can run this command to get the list of available parameters for the module: 
 
 ```sh
-modinfo rtl8821ae | grep parm -A2
+$ modinfo rtl8821ae | grep parm -A2
 ```
 
 {: style="text-align:center"}
 ![Params](/assets/images/ideapad-3xx-series-wifi-linux/Params.png)
 
-In my case, the problem was that fwlps (Firmware control power save) was set to 1. This made the chip power down occasionally which caused the connection to drop.
+In my case, the problem was that `fwlps` (Firmware control power save) was set to `1`. This made the chip power down occasionally which caused the connection to drop.
 
-The solution is to set fwlps to 0, this will cause the chip to use a little more power. I frankly don’t care about that much as the power draw isn’t that much anyway.
+The solution is to set `fwlps` to `0`, this will cause the chip to draw a little more power. I frankly don’t care about that much as the power draw isn’t that much anyway.
 
-Now if you were to load the module manually and pass the parameters to it using modprobe, it would work. But that’s too much work every time you boot your system.
+Now if you were to load the module manually and pass the parameters to it using `modprobe`, it would work. But that’s too much work every time you boot your system.
 
 That’s why the modprobe.d directory exists. It is a directory where you can add configuration files for your modules.
 
 Now, we can add a config file for our WiFi chip so that the kernel loads it with the specified options automatically.
 
 ```sh
-sudo su -c "echo 'options rtl8821ae fwlps=0' > /etc/modprobe.d/rtl8821ae.conf"
+# echo 'options rtl8821ae fwlps=0' > /etc/modprobe.d/rtl8821ae.conf
 ```
-This command will make a config file with the firmware power save option set to 0.
+This command will make a config file with the firmware power save option set to `0`.
 
-Now you can completely poweroff your system and then power it on again (don’t reboot) and the WiFi SHOULD work normally.
+Now you can completely power off your system and then power it on again (don’t reboot) and the WiFi SHOULD work normally.
 
 After doing so, you can run the following command to make sure that the module was loaded with the specified options: 
 
 ```sh
-sudo systool -avm rtl8821ae | grep param -iA10
+# systool -avm rtl8821ae | grep param -iA10
 ```
 
 {: style="text-align:center"}

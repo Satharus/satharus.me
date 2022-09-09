@@ -49,7 +49,7 @@ int main()
 Overflow.c
 
 
-The example is really simple. A char array (buff) with size 6 is allocated*, and a char (a) which has the value of ‘A’. If you remember from my last post, chars are stored as single bytes. After that, the program asks for an input from the user. Then, it prints the value of the 2 declared variables.
+The example is really simple. A `char` array (`buff`) with size 6 is allocated*, and a char (`a`) which has the value of `‘A’`. If you remember from my last post, chars are stored as single bytes. After that, the program asks for an input from the user. Then, it prints the value of the 2 declared variables.
 
 \*If you don’t know, variables are allocated in a _“stack”_ in memory in the order that they were declared.
 
@@ -66,9 +66,9 @@ The stack of the main function initially looks something like this:
 
 **Excuse the horizontal stack, stacks are a social construct anyway.**
 
-The char “a” has been assigned the value ‘A’, and the chars in the “buff” array are initialised to NULL.
+The `char` `a` has been assigned the value `‘A’`, and the chars in the “buff” array are initialised to `NULL`.
 
-When taking the input for “buff “(line12),  we give it an input of “Three”:
+When taking the input for “buff” (line 12), we give it an input of “Three”:
 
 {: style="text-align:center"}
 ![Example 1](/assets/images/buffer-overflows-the-basics/ExampleThree.png)
@@ -81,7 +81,7 @@ The program behaves normally. Here’s what the stack looks like:
 {: style="text-align:center"}
 ![Stack Three](/assets/images/buffer-overflows-the-basics/Three.png)
 
-Each character is placed into its place in the char array, and a final NULL terminator is added. Seems good so far.
+Each character is placed into its place in the char array, and a final `NULL` terminator is added. Seems good so far.
 
 ## Example 2
 
@@ -93,12 +93,12 @@ Let’s try another input, let’s try something that’s 6 characters in length
 {: style="text-align:center"}
 Example 2
 
-There’s a change in the program’s behaviour! The value of the char “a” _wasn’t printed_. This is where our first buffer overflow happens.
+There’s a change in the program’s behaviour! The value of the `char` `a` _wasn’t printed_. This is where our first buffer overflow happens.
 
 {: style="text-align:center"}
 ![Stack Potato](/assets/images/buffer-overflows-the-basics/Potato.png)
 
-Like example 1, each character is placed into its place in the char array, and a final NULL terminator is added. But this time since “potato” has six characters and our array (buff) can only hold 6 characters, the NULL terminator was written into char a’s location in memory. The truth is that the value of “a” was printed, but since the value is NULL, you didn’t get any output for it.
+Like example 1, each character is placed into its place in the char array, and a final `NULL` terminator is added. But this time since “potato” has six characters and our array (`buff`) can only hold 6 characters, the `NULL` terminator was written into character `a`’s location in memory. The truth is that the value of `a` was printed, but since the value is `NULL`, we didn’t get any visible/printable output for it.
 
 ## Example 3
 
@@ -110,9 +110,9 @@ Let’s try one final input, and see how the program behaves.
 {: style="text-align:center"}
 Example 3
 
-Again, we see a change in behaviour. This time, the value of “a” is printed, but it isn’t ‘A’.
+Again, we see a change in behaviour. This time, the value of `a` is printed, but it isn’t `‘A’`.
 
-This is also a buffer overflow, but since “Reverse” contains 7 characters, the NULL terminator was written after a’s location in memory. The value ‘e’ was written in a’s location in memory.
+This is also a buffer overflow, but since “Reverse” contains 7 characters, the `NULL` terminator was written after `a`’s location in memory. The value ‘e’ was written in `a`’s location in memory.
 
 {: style="text-align:center"}
 ![Stack Reverse](/assets/images/buffer-overflows-the-basics/Reverse.png)

@@ -17,7 +17,7 @@ article_header:
 cover: /assets/images/storage-devices/hdd_square.jpg
 ---
 
-You go out to the nearest computer store or mall and you buy a brand new fancy 1TB USB 3.0 hard drive with all the cool backup features that no one really uses, and not only until you plug it into your PC that you feel scammed! You find out that it is roughly only 931 “gigabytes” instead of the 1000 or 1024 you were expecting!
+You go out to the nearest computer store or mall and you buy a brand new fancy 1TB USB 3.0 hard drive with all the cool backup features that no one really uses. Not only until you plug it into your PC, you feel scammed! You find out that it is roughly only 931 “gigabytes” instead of the 1000 or 1024 you were expecting!
 <!--more-->
 
 It doesn’t feel good and it really is confusing to most users, the truth is that no one really scammed you and what the manufacturers/distributors are advertising is perfectly legal but not as honest as most of us would like. Most people just don’t know the difference.

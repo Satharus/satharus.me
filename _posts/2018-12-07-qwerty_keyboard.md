@@ -28,7 +28,7 @@ We often take the technology we have today for granted, and we rarely ask oursel
 {: style="text-align:center"}
 An early typewriter with the piano-like layout.
 
-Okay, so our story starts back at the end of the 19th century, when typewriters were just getting popular and they were much faster than writing by hand. They had a layout similar to piano keys and were arranged in alphabetical order. So, the buttons were really close to each other and when a typist would type really fast, his typewriter would get jammed and they’d have to manually unjam it. So, the typewriter manufacturers decided to make a layout that separated the keys from each other a bit to prevent jamming, and at the same time make it still faster than writing by hand.
+Okay, so our story starts back at the end of the 19th century, when typewriters were just getting popular and they were much faster than writing by hand. They had a layout similar to piano keys and were arranged in alphabetical order. So, the buttons were really close to each other and when a typist would type really fast, his typewriter would get jammed and they’d have to manually unjam it. Typewriter manufacturers decided to make a layout that separated the keys from each other a bit to prevent jamming, and at the same time make it still faster than writing by hand.
 Thus, they came up with the QWERTY layout we know today:
 
 {: style="text-align:center"}
@@ -40,7 +40,7 @@ A standard QWERTY (UK and Ireland) keyboard.
 # Why Still Use it Then?
 You’re probably wondering now why we’re still using the QWERTY layout if our typing devices don’t have moving parts anymore. Well, the answer is that nobody really knows why, people just got used to the QWERTY layout and had no reason to change it. Most of the keyboards today use this layout or some very similar layout like QWERTZ for Polish and some other European languages.
 
-However, there is a “better” alternative, named “Dvorak”, after the man who invented it, “[August Dvorak](https://en.wikipedia.org/wiki/August_Dvorak)”. It doesn’t indicate the arrangement of the keys. The Dvorak layout is faster in typing because the most used letters -like the vowels, for example- are in the middle row, so you have to move your fingers less between rows, thus typing faster.
+However, there is a _“better”_ alternative, named “Dvorak”, after the man who invented it, “[August Dvorak](https://en.wikipedia.org/wiki/August_Dvorak)” (The name doesn’t indicate the arrangement of the keys). The Dvorak layout is faster in typing because the most used letters -like the vowels, for example- are in the middle row, so you have to move your fingers less between rows, thus typing faster.
 
 Although it may have gained slight popularity, a lot of people argue that since we're all used to QWERTY by now, it wouldn't be worth it to switch to Dvorak to be faster. However, most people have agreed that Dvorak gives a more comfortable typing experience.
 

@@ -73,7 +73,7 @@ Learns to adapt in time on seeing that change can lead to something better.
 
 # Who Moved My Cheese?
 
-The four characters of the story live in a maze, the maze has different kinds of cheese. This is clear symbolism.
+The four characters of the story live in a maze, the maze has different kinds of cheese. This is clear symbolism:
 
 - The cheese is the thing we want/the goal we want to achieve.
 - The maze is the real world.

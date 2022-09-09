@@ -16,14 +16,15 @@ article_header:
     src: /assets/images/writeup-national-ctf-2019/nationalctf19_header.jpg
 cover: /assets/images/writeup-national-ctf-2019/nationalctf19_cover.jpg
 ---
-CyberTalents’ Egypt National Cyber Security CTF 2019 was held on September 7th in Intercontinental City Stars, Cairo.
+CyberTalents’ Egypt National Cyber Security CTF 2019 was held on September the 7th in Intercontinental City Stars, Cairo.
 
 It was a pretty fun experience for me, as I had never participated in the nationals before. My team and I solved 3 challenges during the CTF and one after it.
 
-Here are the writeups for what we solved:
+**Here are the writeups for what we solved:**
 <!--more-->
 
 Note: The text for the challenges is not that accurate because I forgot to take screenshots of the challenges, so I tried to remember what they were approximately.
+{:.info}
 
 # Record
 
@@ -61,12 +62,11 @@ It did convert to ASCII, but I got this:
 {: style="text-align:center"}
 ![garbage](/assets/images/writeup-national-ctf-2019/garbage.png)
 
-Seems like a load of garbage. So I just figured that it wasn’t ASCII. I did a little bit of searching for “Shakespeare Cipher” and found this image:
+Seems like a load of garbage. So I just figured that it wasn’t ASCII. I did a little bit of searching for “Shakespeare Cipher” and found the following image on [this page](https://derekbruff.org/blogs/fywscrypto/historical-crypto/shakespeares-secrets-a-hidden-cipher-in-literatures-greatest-works/).
 
 {: style="text-align:center"}
 ![bacon](/assets/images/writeup-national-ctf-2019/bacon-1.png)
 
-on [this page](https://derekbruff.org/blogs/fywscrypto/historical-crypto/shakespeares-secrets-a-hidden-cipher-in-literatures-greatest-works/)
 
 I found out that this type of cipher is called a “Bacon Cipher”, it uses A and B (or basically any 2 characters) to encode the alphabet. Each character consists of 5 bits, kinda like how we count in binary but you move on to the next letter instead of the next number.
 
@@ -123,7 +123,9 @@ Also, yes, the word villain was misspelled.
 
 **Text**: I can’t remember at all. 😦
 
-This challenge had a .pcap file attached, so the first thing we tried to do was to open it in wireshark: `$ wireshark runecover.pcap`.
+This challenge had a .pcap file attached, so the first thing we tried to do was to open it in wireshark: 
+
+`$ wireshark runecover.pcap`
 
 {: style="text-align:center"}
 ![wireshark](/assets/images/writeup-national-ctf-2019/wireshark.png)

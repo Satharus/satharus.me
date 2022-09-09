@@ -21,7 +21,7 @@ cover: /assets/images/writeup-pico18-bufferoverflow-1/pico18_bof1_cover.jpg
 > Anyway since I’ve already written it, here it is.
 <!--more-->
 
-For those that don’t know, [PicoCTF](https://picoctf.com/) is a free cybersecurity CTF game targeted at middle and high school students. It has some really easy challenges that get harder as you progress. I always recommend it as a good starting point for CTFs. This specific challenge is a good starting point to start learning about buffer overflows and how to exploit them.
+For those that don’t know, [PicoCTF](https://picoctf.com/) is a free cybersecurity CTF game targeted at middle and high school students. It has some really nice challenges that get harder as you progress, starting out with very easy ones. I always recommend it as a good starting point for CTFs. This specific challenge is a good starting point to start learning about buffer overflows and how to exploit them.
 
 If you don’t know what CTFs are, check out my article: [The Art of Cybersecurity (And how to get into it)](https://satharus.me/cybersecurity/2019/12/02/the_art_of_cybersecurity.html) for some starter info.
 
@@ -47,15 +47,15 @@ Enter any string and it’ll say “Okay, time to return… Fingers Crossed… J
 
 Note: 0x80486b3 was the address in my case. It’ll probably be different if you try to solve the challenge.
 
-This means that it returns to that address in the assembly code. If we change that value, we can make the program return to any address by writing over it using the input.
+This means that it returns to that address in the program's memory. If we change that value, we can make the program return to any address by writing over it using the input.
 
 This can be achieved using a buffer overflow exploit.
 
 I tried entering 32 ‘a’ chars and I didn’t see any change in the address, so I kept increasing them until I found that the address starts changing after entering 44 characters.
 
-The explanation for this is that the saved instruction pointer (before the call to vuln()) is located 12 bytes after the last byte in the buffer.
+The explanation for this is that the saved instruction pointer (before the call to `vuln()`) is located 12 bytes after the last byte in the buffer.
 
-Checking the assembly code using ObjDump, the function we want to run (win()), is found at address 080485cb. Which is exactly where we want to return.
+Checking the assembly code using ObjDump, the function we want to run: `win()`, is found at address 080485cb. Which is exactly where we want to return.
 
 ```c
 void win() {
@@ -86,7 +86,7 @@ done
 echo -e \\xcb\\x85\\x04\\x08
 ```
 
-Mind that the address is entered  in reverse (byte-wise) because Intel x86 is Little-endian which means the least significant byte maps to the lowest memory address. So 0x12345678 would be stored in memory as 0x78563412.
+Mind that the address is entered in reverse (byte-wise) because Intel x86 is Little-Endian which means the least significant byte maps to the lowest memory address. So 0x12345678 would be stored in memory as 0x78563412.
 
 {: style="text-align:center"}
 ![Output](/assets/images/writeup-pico18-bufferoverflow-1/Output.png)

@@ -113,7 +113,7 @@ Don’t believe what the dev is saying? Check the source code.
 
 Don’t like the source code? Change it, or ask someone to change it for you if you don’t know how to code (someone probably already did).
 
-This is a little bit of a generalisation, as there are a lot of different open source licenses. I’ll talk about them in another post.
+This is a little bit of a generalisation, as there are a lot of different open source licenses. Maybe, I’ll talk about them in another post!
 
 Freedom Score: **4/4**.
 

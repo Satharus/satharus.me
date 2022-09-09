@@ -51,7 +51,7 @@ In an actual attack scenario, the file would be recieved from a remote server or
 {: style="text-align:center"} 
 ![Output of the program](/assets/images/sysmon-eid-27-bypass/App.exe.png)
 
-I also opened the event viewer and set a filter for event 27 at Application and Services Logs/Microsoft/Windows/Sysmon/Operational.
+I also opened the event viewer and set a filter for event 27 at `Application and Services Logs/Microsoft/Windows/Sysmon/Operational`.
 
 {: style="text-align:center"}
 ![Sysmon Filter](/assets/images/sysmon-eid-27-bypass/SysmonFilter.png)
@@ -99,10 +99,14 @@ If you don't know, file formats typically have a [sequence of bytes](https://en.
 
 The Windows Portable Executable format uses a file header/signature of `MZ` (the bytes `0x4D` and `0x5A`). That includes all executables, including .exe, .dll, .sys, etc...
 
+Fun Fact: MZ is used as they are the initials of [Mark Zbikowski](https://en.wikipedia.org/wiki/Mark_Zbikowski), one of the lead developers of MS-DOS and the designer of the MS-DOS executable file format (which later became the Protable Executable format).
+{:.info}
+
+
 ## Primal instinct
 My very first thought was to zero out the MZ header and try to execute the file as is. That way Sysmon wouldn't detect it but I'd still be able to execute it just fine. However, that failed as `CreateProcess()` failed to execute a binary that doesn't have an MZ header. Running the executable from PowerShell or the command line prompt didn't work either. Interestingly enough, this proved some points:
  - Sysmon relies on the MZ header to detect an executable, as writing an entire binary without "MZ" worked just fine. 
- - Sysmon doesn't rely on the bytes `MZ` alone as when writing those to a file it doesn't detect anything.
+ - Sysmon doesn't rely on the bytes `MZ` alone as when writing those to a file, it doesn't detect anything.
 
 
 So, it seems like Sysmon relies on `MZ` alongside _something_ else to detect that it is an executable.

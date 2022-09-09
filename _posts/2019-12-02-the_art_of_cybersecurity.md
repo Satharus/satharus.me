@@ -17,7 +17,7 @@ article_header:
 cover: /assets/images/the-art-of-cybersecurity/init3_cover.png
 ---
 
-You put on your black hoodie, install Kali Linux, change your Facebook cover photo to edgiest pic related to security that you can find and boom! hacker mode. Hell yes, you’re ready to become the next Elliot Alderson and hack the FBI with your 1337 command line tools, that router in your neighbour’s living room that you always wanted access to, and …. let’s just take it back a couple of steps, shall we?
+You put on your black hoodie, install Kali Linux, change your Facebook cover photo to edgiest pic related to hacking that you can find and boom! hacker mode. Hell yes, you’re ready to become the next Elliot Alderson and hack the FBI with your 1337 command line tools, that router in your neighbour’s living room that you always wanted access to, and …. let’s just take it back a couple of steps, shall we?
 
 <!--more-->
 
@@ -78,7 +78,7 @@ Thanks to Aly Anwar and Amr Fathi for recommending most of these resources.
 
 The art of analysing the footprints and the evidence. The art of backtracking.
 
-This branch of cybersecurity focuses on the analysis of traces and captured files such as captured network traffic, recovered hard drive images, memory dump analysis, etc..
+This branch of cybersecurity focuses on the analysis of traces and captured files such as captured network traffic, recovered hard drive images, memory dumps, etc..
 
 It is basically tracing back the steps that caused the attack, crash, exploit, etc...
 
@@ -111,7 +111,7 @@ Check this write-up for a good example too:
     - [This cool article I found](https://www.forensicscolleges.com/blog/resources/guide-digital-forensics-tools)
     - [Forensics – CTF Field Guide](https://trailofbits.github.io/ctf/forensics/)
 
-Thanks to 0x01G33k for telling me about some of these resources.
+Thanks to [0x01G33k](https://0x01g33k.github.io/) for telling me about some of these resources.
 
 
 # Reverse Engineering
@@ -123,7 +123,7 @@ The art of analysing and exploiting binaries.
 
 This branch of cybersecurity focuses on the analysis of binary files. Including malware, of course.
 
-Analysis of binaries is usually done using disassemblers or decompilers which help you read the assembly (or even the high level code) in some cases.
+Analysis of binaries is usually done using disassemblers or decompilers which assist in reading the binary file in assembly language (or even high level code in some cases).
 
 ## A Small Example
 

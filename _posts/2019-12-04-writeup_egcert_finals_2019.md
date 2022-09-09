@@ -52,7 +52,7 @@ The code ends in === so I guessed that it was base64, but it wasn’t.
 
 I tried base32 and it worked fine. But, I got the output reversed so I had to reverse it again to get the actual flag.
 
-A one-liner for this would be: `echo BASE32TEXT | base32 -d | rev`
+A BASH one-liner for this would be: `$ echo BASE32TEXT | base32 -d | rev`
 
 Of course you need to replace BASE32TEXT with the text given in the challenge.
 
@@ -65,7 +65,7 @@ Of course you need to replace BASE32TEXT with the text given in the challenge.
 
 All of the numbers are between 0 and 8 so it seems like something you’d type on a phone keypad.
 
-The first thing that came to my teammate’s mind was T9 predictive text, which was the autocorrect of typing on phones in the early 2000s.
+The first thing that came to my teammate’s mind was T9 predictive text, which was the _autocorrect_ of typing on phones in the early 2000s.
 
 You can easily decipher it here: [dcode.fr/t9-cipher](https://www.dcode.fr/t9-cipher)
 
@@ -82,7 +82,7 @@ You can easily decipher it here: [dcode.fr/t9-cipher](https://www.dcode.fr/t9-ci
 {: style="text-align:center"}
 ![text 3](/assets/images/writeup-egcert-finals-2019/text-3.png)
 
-At first,the hint wasn’t pushed to the contestants yet.
+At first, the hint wasn’t pushed to the contestants yet.
 
 On connecting to the server, we find that we can give it a string and it replies with “BAD FLAG!!!!”. So it seems to be checking the string we’re sending if it matches the correct flag.
 
@@ -98,11 +98,11 @@ At this point we had no idea what to brute force, so they released this hint for
 
 This made it much easier, so it’s testing time!
 
-I tried sending EGCTF{0 and then EGCTF{1, etc.. until I found that the first digit is 7. Then I figured it was scripting time (sort of) as I wasn’t gonna try all of the digits manually.
+I tried sending EGCTF{0 and then EGCTF{1, etc.. until I figured that the first digit is 7. Then I figured it was scripting time (sort of) as I wasn’t gonna try all of the digits manually.
 
 I wrote a small loop in BASH that increases the digit by one every time and sends it to the server, calculating the total time that the command took.
 
-We know that it delays one second for every correct character, so if the number of seconds increase then we know that we entered a new correct character.
+We know that it delays one second for every correct character, so if the number of seconds increases then we know that we entered a new correct character.
 
 {: style="text-align:center"}
 ![getting-digitstext](/assets/images/writeup-egcert-finals-2019/getting-digitstext.png)
@@ -157,17 +157,17 @@ This part is interesting enough, the program apparently needs 4 arguments to exe
 
 So it works, it prints a different string and waits for a keypress to exit.
 
-Sadly, the names for the functions were all garbage. This made it kind of hard to get an idea of what was exactly going on. I wasted a lot of time renaming the functions, but it helped me understand what was going on.
+Sadly, the names for the functions were all randomised. This made it kind of hard to get an idea of what was exactly going on. I wasted a lot of time renaming the functions, but it helped me understand what was going on.
 
 {: style="text-align:center"}
 ![cleanprogram](/assets/images/writeup-egcert-finals-2019/cleanprogram.png)
 
-On looking at the clean program, we find that the program basically decrypts the ciphertext that was in the cipher class and then executes a powershell with the decrypted text as an argument.
+On looking at the clean program, we find that the program basically decrypts the ciphertext that was in the cipher class and then executes PowerShell with the decrypted text as an argument.
 
 {: style="text-align:center"}
 ![debug](/assets/images/writeup-egcert-finals-2019/debug.png)
 
-I debugged the program until I could find the local variable containing the decrypted text. It is way too long for me to post here, but anyway it seemed like garbage with some meaningful code-like strings in the middle.
+I debugged the program until I could find the local variable containing the decrypted text. It is way too long for me to post here, but anyway it seemed random with some meaningful code-like strings in the middle.
 
 {: style="text-align:center"}
 ![decoded code](/assets/images/writeup-egcert-finals-2019/decoded-code.png)
@@ -182,9 +182,9 @@ So I tried running it in PowerShell and got “Failed!” as an output.
 {: style="text-align:center"}
 ![initial powershell](/assets/images/writeup-egcert-finals-2019/initial-powershell.png)
 
-So it was time to deobfuscate that code and get an idea of what it is doing.
+So, it was time to deobfuscate that code and get an idea of what it is doing.
 
-I looked online for quite some time until I stumbled across another writeup that showed that you can treat this whole code as a string and pass it as an argument to `Write-Output` in PowerShell. We just have to remove the part at the start until -JOiN”).
+I looked online for quite some time until I stumbled across another writeup that showed that you can treat this whole code as a string and pass it as an argument to `Write-Output` in PowerShell. We just have to remove the part at the start until `-JOiN'')`.
 
 So here we go, It seems to make a little bit more sense.
 
@@ -209,7 +209,7 @@ You can see the flag being compared in the most retarded way possible. Neverthel
 {: style="text-align:center"}
 ![cleaned file](/assets/images/writeup-egcert-finals-2019/cleanedfile.png)
 
-The command would be: `cat flagCode.ps  | tr {} '\n' | cut -d \' -f 2 | tr -d '\n' | tr -d ' '`
+A very dirty BASH one-liner would be: `$ cat flagCode.ps  | tr {} '\n' | cut -d \' -f 2 | tr -d '\n' | tr -d ' '`
 
 {: style="text-align:center"}
 ![finalcommand](/assets/images/writeup-egcert-finals-2019/finalcommand.png)
