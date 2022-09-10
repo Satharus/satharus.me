@@ -37,7 +37,7 @@ You can find links to my socials in the site’s footer.
 <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/45784755/activity-summary/b916de7f407305cdc30ce631d5a1834f9a997465'></iframe>
 
 
-## This site
+## This Site
 [This site](https://github.com/Satharus/satharus.me) was created using [Jekyll](https://jekyllrb.com/) and the [TeXt theme](https://tianqi.name/jekyll-TeXt-theme/). GitHub stats are powered by [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats).
 
 Since this website is static, I couldn't find a proper way to add a comment system in order to get feedback from my readers without resorting to solutions which affect my readers' privacy. So I am encouraging anyone who visits this website to not hesitate if they have any comments or feedback! Email or DM me your suggestions, feedback, and comments anytime! 
