@@ -171,7 +171,7 @@ Well, now that you know a little bit about 3 of the major cybersecurity fields, 
 - [CyberTalents](https://cybertalents.com/challenges)
 - [Root-Me](https://www.root-me.org/)
 
-There’s also this list that has many many more: [fareedfauzi.github.io/ctfonline](https://fareedfauzi.github.io/ctfonline/)
+There’s also this list that has many many more: [fareedfauzi.github.io/ctfonline](https://web.archive.org/web/20210621164215/https://fareedfauzi.github.io/ctfonline/#)
 
 You can start with PicoCTF as it is the easiest and learn as you go as the challenges are really beginner friendly at first and then gradually get harder.
 
