@@ -44,7 +44,7 @@ Taking the simple config file from the post for demonstration purposes, I instal
 
 I also wrote a very simple executable which prints out "Catch me if you can, Sysmon!". This is the executable that I'm going to try to drop and run from the Downloads folder. This executable as a start is placed in Documents\App.exe.
 
-In an actual attack scenario, the file would be recieved from a remote server or perhaps embedded in the file itself. However, this is for demonstration only so it shouldn't really matter as Sysmon doesn't care where the file originated. All it cares about is the writing of an executable to the folders specified in the rule.
+In an actual attack scenario, the executable file (PE) would be recieved from a remote server or perhaps embedded in the malware dropper itself. However, this is for demonstration only so it shouldn't really matter as Sysmon doesn't care where the file originated. All it cares about is the writing of an executable to the folders specified in the rule.
 {:.info}
 
 
