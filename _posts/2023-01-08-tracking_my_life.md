@@ -103,6 +103,13 @@ Track your life. I genuinely can't recommend it enough! Knowing is always better
 
 From my own, non-scientific(ish?) experience, tracking my life has helped me a lot in understanding myself, my own emotions, and has really helped me free my mind.
 
+You don't have anything to lose.
+
+1. Choose an app you liked, or even use an offline method such as a notebook
+2. Spend a minute every day logging for a month or whatever time period you like
+3. Start observing your patterns and decide if it is worth it or not!
+
+
 I thought that this post would be nice to post at the start of the year. I've had it in my backlog for much longer than I can remember. 
 
 
