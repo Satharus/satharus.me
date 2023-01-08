@@ -23,7 +23,7 @@ Growing up, I had quite a bit of difficulty understanding what made me happy and
 
 <!--more-->
 
-However, around early 2019 -a time where I was having a really hard time in life-, the following YouTube video came across me.
+However, around early 2019 -a time where I was having a really hard time in life-, I came across the following YouTube video.
 <div>{%- include extensions/youtube.html id='0tnX81N6Ris' -%}</div>
 
 I watched the video, and then thought to myself: "Well, how about I give this a try too? There isn't much to lose". So, starting around February 2019 until December 2021, I recorded how I felt every single day, with notes on what I did, and the emotions I felt throughout the day.
