@@ -23,7 +23,7 @@ Growing up, I had quite a bit of difficulty understanding what made me happy and
 
 <!--more-->
 
-However, around early 2019 -a time where I was having a really hard time in life-, I came across the following YouTube video.
+However, around early 2019 -a time where I was having a really hard time in life-, I came across the following YouTube video:
 <div>{%- include extensions/youtube.html id='0tnX81N6Ris' -%}</div>
 
 I watched the video, and then thought to myself: "Well, how about I give this a try too? There isn't much to lose". So, starting around February 2019 until December 2021, I recorded how I felt every single day, with notes on what I did, and the emotions I felt throughout the day.
@@ -105,9 +105,11 @@ From my own, non-scientific(ish?) experience, tracking my life has helped me a l
 
 You don't have anything to lose.
 
-1. Choose an app you liked, or even use an offline method such as a notebook
+1. Choose an app you like, or even use an offline method such as a notebook
 2. Spend a minute every day logging for a month or whatever time period you like
-3. Start observing your patterns and decide if it is worth it or not!
+3. Start observing your patterns and maybe decide for yourself if it is worth it or not!
+
+Note: The more data you collect, the more valuable your results are!
 
 
 I thought that this post would be nice to post at the start of the year. I've had it in my backlog for much longer than I can remember. 
