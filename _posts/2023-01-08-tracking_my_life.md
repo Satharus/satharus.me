@@ -109,7 +109,7 @@ You don't have anything to lose.
 2. Spend a minute every day logging for a month or whatever time period you like
 3. Start observing your patterns and maybe decide for yourself if it is worth it or not!
 
-Note: The more data you collect, the more valuable your results are!
+Note: The more data you collect, the more valuable your results are.
 
 
 I thought that this post would be nice to post at the start of the year. I've had it in my backlog for much longer than I can remember. 
