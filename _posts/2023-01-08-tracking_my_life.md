@@ -41,7 +41,7 @@ This is not an advertisement for the app. I just think it is genuinely amazing a
 {:.info}
 
 {: style="text-align:center"}
-![Pixel Colours](/assets/images/tracking-my-life/Pixel_colours.png)
+![Pixel Colours](/assets/images/tracking-my-life/Pixel_Colours.png)
 
 When you log your days, you end up seeing something that looks kind of like this.
 
