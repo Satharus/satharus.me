@@ -28,7 +28,7 @@ However, around early 2019 -a time where I was having a really hard time in life
 
 I watched the video, and then thought to myself: "Well, how about I give this a try too? There isn't much to lose". So, starting around February 2019 until December 2021, I recorded how I felt every single day, with notes on what I did, and the emotions I felt throughout the day.
 
-I stopped doing that in 2022 as I was serving in the military. So, I didn't really have much time or ease of mind to track anything. In retrospect, I should have track these days, they're some of the most packed (to say the least) days of my life. It would've been interesting to see statistics for them.
+I stopped doing that in 2022 as I was serving in the military. So, I didn't really have much time or ease of mind to track anything. In retrospect, I should have tracked these days, they're some of the most packed (to say the least) days of my life. It would've been interesting to see statistics for them.
 
 # The Tracking Method
 Back then I looked for an app that could let me track my days and be able to see statistics later on, with options to export data.
