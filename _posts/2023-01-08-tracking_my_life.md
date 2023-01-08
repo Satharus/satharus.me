@@ -99,7 +99,7 @@ Being "excited" for something or accomplishing things makes me feel relatively h
 And of course, feeling like I have failed at something makes me feel much worse than anything else listed here, as you can probably tell by the chart.
 
 # The Verdict
-Track your life. Knowing is always better than not knowing. Using an app such as the one I mentioned, or any other app makes it a much easier process.
+Track your life. I genuinely can't recommend it enough! Knowing is always better than not knowing. Using an app such as the one I mentioned, or any other app makes it a much easier process.
 
 From my own, non-scientific(ish?) experience, tracking my life has helped me a lot in understanding myself, my own emotions, and has really helped me free my mind.
 
