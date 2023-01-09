@@ -3,7 +3,7 @@ layout: article
 title: Optimistic Nihilism 
 categories: [Misc]
 author: Ahmed Elmayyah
-tags: [Misc.]
+tags: [Life]
 mode: normal 
 header:
   theme: dark
