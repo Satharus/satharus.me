@@ -90,7 +90,7 @@ In contrast, the days where I mentioned work in 2020 were pretty bad days. This 
 {: style="text-align:center"}
 ![Feelings Score](/assets/images/tracking-my-life/Feeling_Score.png)
 
-Now to the final statistic I am showing. Psychiatrists would disagree with me on calling the words in this graph "emotions" and what not but please don't @me, I am just a tech guy trying to get a grasp on his -way more complex than tech- emotions.
+Now to the final statistic I am showing. Psychiatrists would disagree with me on calling the words in this chart "emotions" and what not but please don't @me, I am just a tech guy trying to get a grasp on his -way more complex than tech- emotions.
 
 Anyway, according to the chart, you can see that days where I log that I am feeling "love" or "belonging", I am super happy. 
 
