@@ -23,6 +23,7 @@ Here's some of the work I am proud of, in no particular order:
 
 Not strictly software, but related:
 
+- [OSC 2023 Cybersecurity Session Content](https://gist.github.com/Satharus/84d6cd58bf1cab9d617ab1a298890a18).
 - [My dot files](https://github.com/Satharus/dotfiles).
 - [EOI 2019 Competitive Programming Sessions](https://github.com/Satharus/EOI-Preparation-Sessions) for middle schoolers.
 - Open Source Community [FCIS Linux Workshop 2019 content](https://github.com/Satharus/OSC19-Linux-Workshop-Sessions).
