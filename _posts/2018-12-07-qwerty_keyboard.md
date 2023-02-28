@@ -52,6 +52,3 @@ The simplified standard Dvorak keyboard layout.
 
 Thank you for reading my first post! I originally published this as a “note” on Facebook, but since this blog exists now I’ll start posting here.
 If you enjoyed it or think that it is interesting, share it so other people would read it too!
-
-
-![test gif](https://i.makeagif.com/media/11-13-2019/HwLeX1.gif)
