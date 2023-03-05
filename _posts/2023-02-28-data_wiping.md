@@ -92,7 +92,7 @@ It is extremely dangerous to run hard drive (HDD) secure deletion software on SS
 
 
 ### Physical Destruction
-Well, we discussed a couple of humane ways to destroy data. But, what if the data is extremely sensitive? What if your plan to conquer the world is so secret that you can't trust any software or any human being? Well, in this case, The National Institute of Standards and Technology's (NIST) [Guidelines for Media Sanitisation](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf) recommendeds that you physically destruct the drive since that the data is so highly sensitive.
+Well, we discussed a couple of humane ways to destroy data. But, what if the data is extremely sensitive? What if your plan to conquer the world is so secret that you can't trust any software or any human being? Well, in this case, The National Institute of Standards and Technology's (NIST) [Guidelines for Media Sanitisation](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf) recommendeds that you physically destruct the drive since the data is so highly sensitive.
 
 {: style="text-align:center"}
 ![](/assets/images/data-wiping/Gilfoyle.gif)
