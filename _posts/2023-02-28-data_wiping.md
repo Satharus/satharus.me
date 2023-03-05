@@ -17,7 +17,7 @@ article_header:
 cover: //assets/images/data-wiping/data-wiping_cover.jpg
 ---
 
-We've all been there, you want to sell your laptop, old PC, or even your hard drive. Then, you recall reading somewhere that data can be recovered from drives even after they've been _formatted_... and, well, of course they can! You look it up on the internet and find not less than seven local businesses and over a hundred global ones that claim to recover data from drives which have been lightly beaten, formatted, corrupted, and many other scenarios.
+We've all been there, you want to sell your laptop, old PC, or even your hard drive. Then, you recall reading somewhere that data can be recovered from drives even after they've been _formatted_... and, well, of course it can! You look it up on the internet and find not less than seven local businesses and over a hundred global ones that claim to recover data from drives which have been lightly beaten, formatted, corrupted, and many other scenarios.
 <!--more-->
 
 
