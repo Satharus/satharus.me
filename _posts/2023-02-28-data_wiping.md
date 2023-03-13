@@ -87,7 +87,7 @@ Hard drives are basically magnetic platters. We can use a strong magnet to pract
 ### Solid State Drives
 Good news! SSDs actually (in most cases) regularly zero out locations which are marked as free in the filesystem table in order to preserve their lifespan. This is called `TRIM` and is implemented for most -if not all of- modern SSDs and OSs. Even better news, most SSDs have utilities created by their manufacturers or are available through the UEFI BIOS to securely erase and zero out the entire SSD or a specific partition. This wipes any existing files completely.
 
-It is extremely dangerous to run hard drive (HDD) secure deletion software on SSDs, it shortens their lifespan significantly and are often unnecessary. Please resort to using the software supplied by the manufacturer.
+It is extremely dangerous to run hard drive (HDD) secure deletion software on SSDs, it shortens their lifespan significantly and is often unnecessary. Please resort to using the software supplied by the manufacturer.
 {:.warning}
 
 
