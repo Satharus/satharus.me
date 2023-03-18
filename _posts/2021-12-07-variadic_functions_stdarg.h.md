@@ -17,8 +17,6 @@ article_header:
 cover: /assets/images/variadic_functions_stdarg.h/variadic_cover.jpg
 ---
 
-# printf
-
 If you've ever programmed using C or C++, you've probably come across the function `printf()`. It's a very popular function and all of C/C++ coders have seen it before.
 
 `printf` (short for print formatted) basically prints formatted data to standard output (`STDOUT`). The function does so by using its format parameter, and the variables you want to print. 

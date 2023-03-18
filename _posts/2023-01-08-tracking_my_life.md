@@ -17,9 +17,7 @@ article_header:
 cover: /assets/images/tracking-my-life/tracking_cover.jpg
 ---
 
-# Backstory
-
-Growing up, I had quite a bit of difficulty understanding what made me happy and what did not. My definition of "happiness" changed over the years, however the mystery always remained: What are the things that _actually_ makes me happy? Is it achieving things? Is it sitting back and playing videogames all day? Is it going out with friends even though I had always perceived myself as an introvert? I had no idea and I usually just went with the flow.
+First, the backstory. Growing up, I had quite a bit of difficulty understanding what made me happy and what did not. My definition of "happiness" changed over the years, however the mystery always remained: What are the things that _actually_ makes me happy? Is it achieving things? Is it sitting back and playing videogames all day? Is it going out with friends even though I had always perceived myself as an introvert? I had no idea and I usually just went with the flow.
 
 <!--more-->
 

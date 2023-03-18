@@ -17,8 +17,6 @@ article_header:
 cover: /assets/images/sysmon-eid-27-bypass/sysmon_cover.jpg
 ---
 
-# Sysmon EID 27 
-
 Sysmon version 14.0 was released on the 16th of August 2022. The new version introduces a new Event ID: 27 FileBlockExecutable. It is kind of new for sysmon to block something from happening completely. So, it was interesting to think of a way to bypass it!
 
 I came across [this post by Olaf Hartong](https://medium.com/@olafhartong/sysmon-14-0-fileblockexecutable-13d7ba3dff3e). In this post, Olaf was previewing the new event and how it works on a surface level.
@@ -99,7 +97,7 @@ If you don't know, file formats typically have a [sequence of bytes](https://en.
 
 The Windows Portable Executable format uses a file header/signature of `MZ` (the bytes `0x4D` and `0x5A`). That includes all executables, including .exe, .dll, .sys, etc...
 
-Fun Fact: MZ is used as they are the initials of [Mark Zbikowski](https://en.wikipedia.org/wiki/Mark_Zbikowski), one of the lead developers of MS-DOS and the designer of the MS-DOS executable file format (which later became the Protable Executable format).
+Fun Fact: MZ is used as they are the initials of [Mark Zbikowski](https://en.wikipedia.org/wiki/Mark_Zbikowski), one of the lead developers of MS-DOS and the designer of the MS-DOS executable file format (which later became the Portable Executable format).
 {:.info}
 
 
