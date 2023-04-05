@@ -19,6 +19,8 @@ cover: //assets/images/8bit-computer-part1/8bit_part1_cover.jpg
 
 If you've been following me on Twitter, you must've been seeing some insane dude who is putting some chips on a breadboard (that may be giving you college electronics lab PTSD) and is using a lot of wiring.
 
+<!--more-->
+
 Well, that really isn't far from what has been happening for the last 2 weeks 😅! For the past few weeks I've been building The 4043, an 8Bit Computer inspired by Ben Eater's. It is a turing complete computer with 2 general purpose registers, a 4-digit seven segment output display, and a whopping 16 bytes of RAM!
 
 Actually, I [started this project back in January 2021](https://twitter.com/aelmayyah/status/1346167322470457347) but had to delay it for a while. I ended up [disassembling it](https://twitter.com/aelmayyah/status/1484447871055417344) at the start of last year and [started over from scratch 2 weeks ago](https://twitter.com/aelmayyah/status/1638700480804290560). The only difference is, this time I had a lot more knowledge, better wires, and I had written some documentation last time regarding the mistakes that I made. This made things significantly easier the second time and I'd love to share these tips and experiences with you! Anyway, let's take it from the start, shall we?
