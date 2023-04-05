@@ -169,16 +169,66 @@ At first, this seemed to work fine. After testing it more, I realised that the r
 
 After checking the truth tables for both of the chips, I figured that I had missed something.
 
-| **Input** | **Input** | **Input** | **Output** | \| | \| | **Input**  | **Input** | **Output** |
-|:---------:|:---------:|:---------:|:----------:|:--------:|:----------:|:---------:|:----------:|:----------:|
-| **CLEAR** | **CLOCK** | **D**     | **Q**      |     \|     |     \|     | **Load Enable** | **D**     | **O**      |
-| L         | X         | X         | L          |    \|      |    \|      | L          | L         | L          |
-| H         | ↑         | H         | H          |    \|      |    \|      | L          | H         | H          |
-| H         | ↑         | L         | L          |     \|     |     \|     | H          | X         | Z          |
-| H         | L         | X         | Q<sub>0</sub>         |    \|      |    \|      |            |           |            |
-
-{: style="text-align:center"}
-74LS175 Truth Table(left), 74LS125 Truth Table(right)
+<table>
+<tr>
+    <th colspan="4"> <b>74LS175</b> </th>
+    <th colspan="3"> <b>74LS125</b> </th>
+</tr>
+<tr>
+    <td align="center"> <b>Input</b> </td>
+    <td align="center"> <b>Input</b> </td>
+    <td align="center"> <b>Input</b> </td>
+    <td align="center"> <b>Output</b> </td>
+    <td align="center"> <b>Input</b> </td>
+    <td align="center"> <b>Input</b> </td>
+    <td align="center"> <b>Output</b> </td>
+</tr>
+<tr>
+    <td align="center"> <b>CLEAR</b> </td>
+    <td align="center"> <b>CLOCK</b> </td>
+    <td align="center"> <b>D</b> </td>
+    <td align="center"> <b>Q</b> </td>
+    <td align="center"> <b>Load Enable</b> </td>
+    <td align="center"> <b>D</b> </td>
+    <td align="center"> <b>O</b> </td>
+</tr>
+<tr>
+    <td align="center"> L </td>
+    <td align="center"> X </td>
+    <td align="center"> X </td>
+    <td align="center"> L </td>
+    <td align="center"> L </td>
+    <td align="center"> L </td>
+    <td align="center"> L </td>
+</tr>
+<tr>
+    <td align="center"> H </td>
+    <td align="center"> ↑ </td>
+    <td align="center"> H </td>
+    <td align="center"> H </td>
+    <td align="center"> L </td>
+    <td align="center"> H </td>
+    <td align="center"> H </td>
+</tr>
+<tr>
+    <td align="center"> H </td>
+    <td align="center"> ↑ </td>
+    <td align="center"> L </td>
+    <td align="center"> L </td>
+    <td align="center"> H </td>
+    <td align="center"> X </td>
+    <td align="center"> Z </td>
+</tr>
+<tr>
+    <td align="center"> H </td>
+    <td align="center"> L </td>
+    <td align="center"> X </td>
+    <td align="center"> Q<sub>0</sub> </td>
+    <td align="center">  </td>
+    <td align="center">  </td>
+    <td align="center">  </td>
+</tr>
+</table>
 
 What was essentially happening is that when the load pin was high, the outputs of the 125 chip would be disconnected from the 175 chip (high impedance mode). This is expected and perfectly normal. The 74LS175 would then behave normally and load the inputs when the clock pulsed, in this case, the inputs defaulted to all 1s because that's what TTL(74 series) chips default to.
 
