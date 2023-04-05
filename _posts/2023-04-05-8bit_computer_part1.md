@@ -224,4 +224,6 @@ In the first 4 days, I built the clock, the A, B, and Instruction registers, and
 
 And we can see that the ALU is working. The SUB signal is set low (inactive) and we are adding 0011 (A Register) to 0001 (B Register) which results in (0100) in the ALU's output(AKA the Sum register).
 
-In the next post, we will take a look at days 5 to 8 which include the RAM, the bus, and the program counter! As always, thanks for reading. I hope you learned something new! If you enjoyed this post, share it with your friends that love spending 11 hours wiring chips on a breadboard and trying to figure out why an LED won't turn on.
+In the next post, we will take a look at days 5 to 8 which include the RAM, the bus, and the program counter! As always, thanks for reading. I hope you learned something new!
+
+If you enjoyed this post, share it with your friends that love spending 11 hours wiring chips on a breadboard and trying to figure out why an LED won't turn on.
