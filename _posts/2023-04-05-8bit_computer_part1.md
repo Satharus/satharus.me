@@ -264,7 +264,10 @@ One tip I found very useful when working with the ALU is to try and keep the inp
 {: style="text-align:center"}
 ![Chip Orientation](/assets/images/8bit-computer-part1/orientation.png)
 
-The ALU took approximately 3 and a half hours to build. At this point, I had posted the final update which is within the timespan of the 4 days related to this blog post on Twitter: [Day 4](https://twitter.com/aelmayyah/status/1640185571103371266).
+The ALU took approximately 3 and a half hours to build. At this point, I had posted the final update which is within the timespan of the 4 days related to this blog post on Twitter: [Day 4](https://twitter.com/aelmayyah/status/1640185571103371266). I also posted the following video showcasing everything done so far and how it works.
+
+<div>{%- include extensions/youtube.html id='0VUVJRiVRYA' -%}</div>
+
 
 ## Conclusion
 We've seen what basic computer architecture is and how The 4043 (our computer here) maps to that.
