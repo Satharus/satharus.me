@@ -17,7 +17,7 @@ article_header:
 cover: //assets/images/8bit-computer-part1/8bit_part1_cover.jpg
 ---
 
-If you've been following me on Twitter, you must've been seeing some insane dude who is putting some chips on a breadboard (that may be giving you college electronics lab PTSD) and is using a lot of wiring.
+If you've been following me on Twitter, you must've been seeing some insane dude who is putting some chips on a breadboard and is using a lot of wiring.This may or may not be be giving you college electronics lab PTSD... Anywho, It seems like he's up to something.
 
 <!--more-->
 
