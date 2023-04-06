@@ -101,7 +101,7 @@ Image credit: trainelectronics.com, electronicaembajadores.com
 
 
 #### Power
-Ben recommends getting a proper power supply that can at least output 2A. I was personally using my homemade bench power supply which is just an old ATX desktop power supply that I modified. You should also make sure that power is distributed pretty well across the board, you can do so by measuring the voltage at different points in the board far from the power source. The lowest that I was able to get away with before getting into trouble was 3.8V. Your results will vary.
+Ben recommends getting a proper power supply that can at least output 1.5-2A. I was personally using my homemade bench power supply which is just an old ATX desktop power supply that I modified. You should also make sure that power is distributed pretty well across the board, you can do so by measuring the voltage at different points in the board far from the power source. The lowest that I was able to get away with before getting into trouble was 3.8V. Your results will vary.
 
 {: style="text-align:center"}
 ![Power Supply](/assets/images/8bit-computer-part1/power_supply.jpg)
