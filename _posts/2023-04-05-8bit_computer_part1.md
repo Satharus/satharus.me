@@ -3,7 +3,7 @@ layout: article
 title: "The 4043 - Part 1: Days 1 to 4, How do Computers Work?" 
 categories: Tech
 author: Ahmed Elmayyah
-tags: [Tech, Low Level, 8 Bit Computer, Computer Architecture]
+tags: [Tech, Low Level, 8Bit Computer, Computer Architecture]
 mode: normal 
 header:
   theme: dark
