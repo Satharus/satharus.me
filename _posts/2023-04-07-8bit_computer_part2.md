@@ -109,10 +109,10 @@ The bus connects all of these together. If we want to move anything between any 
 ### A Single Bus
 The von Neumann architecture has only one bus that is used for data and code. So, typically, when you move data between modules, it has to be done in sequential steps and only the relevant components should be enabled to read from the bus or write to it. This is done by the control unit which we will discuss in the next part of this series.
 
+The figure below is an example of how a bus may work. This is a scenario where the user gave the CPU the instruction `ADD 0` which adds the value stored at memory address 0 to the A register. We'll get to assembly in the next blog post, but for now, this description is enough.
+
 {: style="text-align:center"}
 ![Bus](/assets/images/8bit-computer-part2/bus.png)
-
-The figure above is an example of how a bus may work. This is a scenario where the user gave the CPU the instruction `ADD 0` which adds the value stored at memory address 0 to the A register. We'll get to assembly in the next blog post, but for now, this description is enough.
 
 In the figure, we can see the following happen in order:
 1. The value 5 is copied from address 0 in memory to the B register through the bus
