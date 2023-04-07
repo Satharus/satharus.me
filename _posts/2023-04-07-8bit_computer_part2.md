@@ -195,7 +195,7 @@ Connecting the bus took around an hour. After connecting the bus and finishing t
 ## Conclusion
 We now have an idea of how code execution works in a computer, how data and code are moved between the modules, and how the computer keeps track of which instruction to execute. But, how does it understand the instructions? How do we program it? I'll answer these questions in the next post! We will get into how these modules are enabled/disabled according to the instructions and an example of how an output device works.
 
-In the days spanning from the 5th to the 7th, I built the RAM module, the program counter, and started playing around with the bus. The build now has an accumulated build time of 11 and a half plus 9 and a half. Which totalls to 21 hours.
+In the days spanning from the 5th to the 7th, I built the RAM module, the program counter, and started playing around with the bus. The build now has an accumulated build time of 11 and a half plus 8 and a half. Which totalls to 20 hours.
 
 The build looked like this at this stage:
 
