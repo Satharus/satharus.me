@@ -63,7 +63,7 @@ The instruction is `inc`, which stands for increment and has an opcode of `0x41`
 {:.info}
 
 #### Data
-Say you wanted to create a global variable for your program. Where does it get stored? It gets stored in RAM. Specifically in a data segment. Modern computers divide RAM into segments, but let's not get into that. The bottom line is that data such as variables and constant values are also stored in RAM, not just program code.
+Say you wanted to create a global variable for your program. Where does it get stored? It gets stored in RAM. Specifically, in a data segment. Modern computers divide RAM into segments, but let's not get into that. The bottom line is that data such as variables and constant values are also stored in RAM, not just program code.
 
 For example, let's assume you created a global variable: `int count`. A fixed address (fixed for the duration of the program's execution) in RAM will be decided by your OS to store the contents of that variable. Depending on the instructions being executed, the CPU may have to access this address in RAM to retrieve this value or to change it.
 
