@@ -17,8 +17,9 @@ article_header:
 cover: //assets/images/8bit-computer-part2/8bit_part2_cover.jpg
 ---
 
-In the last post, we talked a bit about computer architecture and how computers _generally_ work. We also got to know a little about how the 8Bit breadboard computer maps to all of that, discussing the clock, registers, and ALU (checked in the image below). I recommend going to read the [first part](https://satharus.me/tech/2023/04/05/8bit_computer_part1.html) first before continuing to read this post, if you haven't already.
+In the last post, we talked a bit about computer architecture and how computers _generally_ work. We also got to know a little about how the 8Bit breadboard computer maps to all of that, discussing the clock, registers, and ALU (checked in the image below).
 <!--more-->
+I recommend going to read the [first part](https://satharus.me/tech/2023/04/05/8bit_computer_part1.html) first before continuing to read this post, if you haven't already.
 
 {: style="text-align:center"}
 ![Overview](/assets/images/8bit-computer-part2/overview.jpg)
