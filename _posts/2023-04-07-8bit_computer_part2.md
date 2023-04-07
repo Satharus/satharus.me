@@ -174,7 +174,7 @@ Before realising it was the clear pin, I thought the chip itself was faulty. Thi
 {: style="text-align:center"}
 ![74LS161 Test](/assets/images/8bit-computer-part2/74ls161_test.png)
 
-This is generally a very useful technique. Some people on forums and subreddits have even suggested that you should write unit tests for all chips and verify that they're all working before starting the project. I personally only tested chips when necessary and most the testing was done manually. I only automated this one because I wanted to remove all other variables and test _just_ the chip itself. I had no extra wires, no bad breadboard connections, nothing. Just the chip being directly powered from the Arduino and having all of its pins connected to it.
+This is generally a very useful technique. Some people on forums and subreddits have even suggested that you should write unit tests for all chips and verify that they're all working before starting the project. I personally only tested chips when necessary and most of the testing was done manually. I only automated this one because I wanted to remove all other variables and test _just_ the chip itself. I had no extra wires, no bad breadboard connections, nothing. Just the chip being directly powered from the Arduino and having all of its pins connected to it.
 
 By now, the [6th daily update](https://twitter.com/aelmayyah/status/1641248043172339712) was posted on Twitter. This module took approximately an hour to build.
 
