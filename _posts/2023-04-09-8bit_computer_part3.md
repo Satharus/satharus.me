@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "The 4043 - Part 3: Days 8 to 8, Well, how do they understand instructions?" 
+title: "The 4043 - Part 3: Days 8 to 10, Well, how do they understand instructions?" 
 categories: Tech
 author: Ahmed Elmayyah
 tags: [Tech, Low Level, 8Bit Computer, Computer Architecture, Assembly]
