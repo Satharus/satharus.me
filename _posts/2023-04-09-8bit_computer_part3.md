@@ -99,6 +99,10 @@ Every single CPU has an instruction cycle. This cycle is different between diffe
 
 Every single instruction ever executed on a computer follows an instruction cycle similar to this. Even the popular `nop` instruction which stands for "No Operation", still gets to the "Execute" phase and the control unit would then let the components be idle until the current instruction cycle finishes execution.
 
+A little bit of trivia, in the x86 architecture(before 64-bit iterations): `nop` (opcode `0x90`) was actually just an alias for `xchg eax, eax` which basically swaps the value in the `eax` register itself, to end up doing literally nothing.
+{:.info}
+
+
 ### Micro-Instructions
 A micro-instruction is what each instruction divides into. Each instruction is basically a set of actions the computer needs to do. Each action is considered a micro-instruction.
 
