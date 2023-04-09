@@ -109,9 +109,11 @@ Micro-instructions are usually labelled as _T_<sub>n</sub> Let's take a look at 
 - _T_<sub>1</sub>: Move the content of the program counter into the memory address register
 	- This is to address the instruction that is to be executed, which is kept track of using the program counter
 	- At this point, the memory data register already loaded the value at the memory address since it reads the address from the MAR automatically
+
 #### The Decode Phase:
 - _T_<sub>2</sub>: The MDR is set to output its content, the Instruction register is set to load what's on the bus, and the program counter is incremented
 	- Once the Instruction register has loaded the value in memory (the instruction), it is automatically decoded by the control unit and the execution phase is prepared
+
 #### The Execution Phase:
 - _T_<sub>3</sub>: The value is output from the instruction register onto the bus and the A register is set to load what's on the bus
 - _T_<sub>4</sub>: The computer does nothing
