@@ -69,7 +69,7 @@ We are communicating with the output module using the bus, and the device has a 
 This is why typically CPUs use a separate chip for I/O which can be used to address and communicate with different devices. An example of such a chip is the Intel 8255 chip which was commonly used with the original Intel 8086 processor.
 
 At the end of this post, I have added a link to a Reddit post where someone added more I/O and parts to the computer and was able to get the 8Bit breadboard computer to run the game Snake.
-{.info}
+{:.info}
 
 Now we have an idea of everything we need to know in order to start talking about the control unit.
 
