@@ -30,7 +30,7 @@ Not strictly software, but related:
 
 Here are some other posts I've published elsewhere:
 
-- [Catch the IEX if You Can: PowerShell De-Obfuscation](https://blog.cybercastle.io/catch-the-iex-if-you-can-powershell-de-obfuscation/) (Cyber Castle Blog - 10/5/2021)
+- [Catch the IEX if You Can: PowerShell De-Obfuscation](https://satharus.me/cybersecurity/2021/05/10/powershell_deobfuscation.html) (Originally published on Cyber Castle Blog which has been shut down - 10/5/2021)
 - [Privacy 101 : How to protect your privacy over the internet](https://mnztechnology.com/blog/privacy-101-how-to-protect-your-privacy-over-the-web) (MNZ Technology Blog - 21/6/2020)
 
 
