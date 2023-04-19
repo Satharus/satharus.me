@@ -40,7 +40,7 @@ Feel free to contact me anytime! 😀
 You can find links to my socials in the site’s footer.
 
 #### Add me on Strava 
-<iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/45784755/activity-summary/b916de7f407305cdc30ce631d5a1834f9a997465'></iframe>
+<iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' style="max-width: 100%;" src='https://www.strava.com/athletes/45784755/activity-summary/b916de7f407305cdc30ce631d5a1834f9a997465'></iframe>
 
 
 ## This Site
