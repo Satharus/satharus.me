@@ -27,6 +27,12 @@ My hobbies have mostly been tech-related, such as electronics, cybersecurity, cu
 
 You can check some of [my work here](https://satharus.me/mywork.html).
 
+## Subscribe
+You can subscribe (completely free of charge!) to get my latest posts delivered right to your inbox!
+
+<center>
+<iframe src="https://satharus.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+</center>
 
 ## Contact Me 
 Feel free to contact me anytime! 😀
@@ -42,7 +48,3 @@ You can find links to my socials in the site’s footer.
 
 Since this website is static, I couldn't find a proper way to add a comment system in order to get feedback from my readers without resorting to solutions which affect my readers' privacy. So I am encouraging anyone who visits this website to not hesitate if they have any comments or feedback! Email or DM me your suggestions, feedback, and comments anytime!
 
-You can also subscribe to get my latest posts delivered right to your inbox!
-<center>
-<iframe src="https://satharus.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-</center>
