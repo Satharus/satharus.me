@@ -31,7 +31,7 @@ You can check some of [my work here](https://satharus.me/mywork.html).
 You can subscribe (completely free of charge!) to get my latest posts delivered right to your inbox!
 
 <center>
-<iframe src="https://satharus.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://satharus.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white; max-width: 100%;" frameborder="0" scrolling="no"></iframe>
 </center>
 
 ## Contact Me 
