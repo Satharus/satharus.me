@@ -311,7 +311,7 @@ I also  filmed the following video to showcase the whole build and trace the exe
 - The computer draws 800mA from my power supply on idle
 - Overall, I used approximately 42 meters of wiring in this build
 - The computer in total has 63 chips, including the two shift registers used in the EEPROM programmer
-- The build took a total build time of approximately 34 and a half hours
+- The build took a total build time of approximately 34 and a half hours. This excludes the time initially spent to research and plan, find chip replacements, and the things I learned the first time I attempted this project
 
 
 ### Now What?
