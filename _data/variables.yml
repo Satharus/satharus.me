@@ -6,7 +6,8 @@ default:
     root: /
     home: /
     archive:  /archive.html
-    rss:  "/about.html#subscribe"
+    rss: /feed.xml 
+    subscribe: "/about.html#subscribe"
   mathjax: false
   mathjax_autoNumber: false
   mermaid: false
