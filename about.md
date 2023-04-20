@@ -34,7 +34,7 @@ You can subscribe (completely free of charge!) to get my latest posts delivered 
 <iframe src="https://satharus.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white; max-width: 100%;" frameborder="0" scrolling="no"></iframe>
 </center>
 
-If this isn't your type of thing, you can use subscribe your own way via an [RSS feed](/feed.xml).
+Or, you can subscribe your own way via an [<i class="fas fa-rss"></i> RSS feed](/feed.xml), if that's more your thing.
 
 ## Contact Me 
 Feel free to contact me anytime! 😀
