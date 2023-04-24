@@ -110,7 +110,7 @@ Ben recommends getting a proper power supply that can at least output 1.5-2A. I 
 To debug pretty much any problem in this project, you'll need three things:
 - A good ol' Multimeter
 - Some LEDs like this array on a breadboard which you can connect to certain points and see which values are high and which are low
-- A LOT of patience. Debugging hardware circuits is much more difficult than debugging software.
+- A LOT of patience. Debugging hardware circuits is much more difficult than debugging software
 
 {: style="text-align:center"}
 ![Power Supply](/assets/images/8bit-computer-part1/debugging_tools.jpg)
