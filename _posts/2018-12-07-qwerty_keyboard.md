@@ -42,6 +42,9 @@ You’re probably wondering now why we’re still using the QWERTY layout if our
 
 However, there is a _“better”_ alternative, named “Dvorak”, after the man who invented it, “[August Dvorak](https://en.wikipedia.org/wiki/August_Dvorak)” (The name doesn’t indicate the arrangement of the keys). The Dvorak layout is faster in typing because the most used letters -like the vowels, for example- are in the middle row, so you have to move your fingers less between rows, thus typing faster.
 
+Hi! I am coming from the future (April 2023, as of writing this) to update you, fellow reader, on something I learned after a while. A few years after writing this post, I found a lot of people arguing that the Dvorak keyboard layout isn't really all that much faster. Especially, if (like most people) you are used to QWERTY and have been using it for many years. However, this still makes Dvorak the more physically comfortable (for your hands) option for a lot of people who have tried it. I'm personally sticking with QWERTY until there is a _really_ good reason to switch.
+{:.warning}
+
 Although it may have gained slight popularity, a lot of people argue that since we're all used to QWERTY by now, it wouldn't be worth it to switch to Dvorak to be faster. However, most people have agreed that Dvorak gives a more comfortable typing experience.
 
 {: style="text-align:center"}
