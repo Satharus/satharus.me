@@ -3,7 +3,7 @@ layout: article
 title: There is No Single Roadmap 
 categories: [Tech]
 author: Ahmed Elmayyah
-tags: [Tech, Misc.]
+tags: [Tech, Life]
 mode: normal 
 header:
   theme: dark
