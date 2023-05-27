@@ -3,7 +3,7 @@ layout: article
 title: Why we use the “QWERTY” keyboard layout 
 categories: Tech
 author: Ahmed Elmayyah
-tags: [Tech, History]
+tags: [Tech, History, Hardware]
 mode: normal 
 header:
   theme: dark

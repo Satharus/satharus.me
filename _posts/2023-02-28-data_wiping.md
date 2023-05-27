@@ -3,7 +3,7 @@ layout: article
 title: "Formatting your Hard Drive isn't Enough" 
 categories: Tech
 author: Ahmed Elmayyah
-tags: [Tech, Tech Facts]
+tags: [Tech, Tech Facts, Hardware]
 mode: normal 
 header:
   theme: dark

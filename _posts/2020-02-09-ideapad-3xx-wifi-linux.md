@@ -3,7 +3,7 @@ layout: article
 title: "IdeaPad 3XX (Realtek): Fixing the WiFi dropping on Linux" 
 categories: [Tech]
 author: Ahmed Elmayyah
-tags: [Tech, Guide]
+tags: [Tech, Guide, Hardware]
 mode: normal 
 header:
   theme: dark

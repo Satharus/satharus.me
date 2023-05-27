@@ -3,7 +3,7 @@ layout: article
 title: "The 4043 - Part 2: Days 5 to 7, But, how do they execute code?" 
 categories: Tech
 author: Ahmed Elmayyah
-tags: [Tech, Low Level, 8Bit Computer, Computer Architecture, Assembly]
+tags: [Tech, Low Level, 8Bit Computer, Computer Architecture, Assembly, Hardware]
 mode: normal 
 header:
   theme: dark
