@@ -49,7 +49,7 @@ DO NOT USE YOUR PASSWORD MANAGER (see the next section) AS YOUR MFA. This makes 
 ## \#2: Use a Password Manager
 
 {: style="text-align:center"}
-![](/assets/images/shield-yourself-online-security-tips/Password%20Managers.png)
+![](/assets/images/shield-yourself-online-security-tips/password_managers.png)
 
 This tip is also extremely important as it makes it difficult for evil people to get your password to begin with.
 ### Passwords
