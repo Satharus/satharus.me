@@ -17,8 +17,9 @@ article_header:
 cover: //assets/images/shield-yourself-online-security-tips/shieldyourself_cover.jpg
 ---
 
-I could talk for the entirety of this post about how connected we are and how much we rely on the internet and technology and all that stuff but I am pretty sure we all know that. So, let's just get straight to the point. The fact is that most people have horrible online security habits. We reuse passwords, we set weak passwords, we accidentally post sensitive data online, and many more bad practices to the point that we more than often prioritise convenience over security. 
+I could talk for the entirety of this post about how connected we are and how much we rely on the internet and technology and all that stuff but I am pretty sure we all know that. So, let's just get straight to the point. The fact is that most people have horrible online security habits. 
 <!--more-->
+We reuse passwords, we set weak passwords, we accidentally post sensitive data online, and many more bad practices to the point that we more than often prioritise convenience over security. 
 
 What inspired me to write this post is that when I asked a couple of people in my inner circle, they admitted that they reuse pretty weak passwords and have a couple of bad security practices. The bigger problem is that most of my inner circle are techies and if that is what they do, I can guess how bad it is for people who aren't really tech-savvy. In this post, I'll give you five things you can start doing literally now to improve your online security.
 
