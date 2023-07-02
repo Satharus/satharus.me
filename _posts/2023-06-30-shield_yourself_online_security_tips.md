@@ -56,7 +56,7 @@ This tip is also extremely important as it makes it difficult for evil people to
 Most of the time we use passwords as our login method. If one password gets known somehow and you're using it somewhere else, that is a huge issue as that other account could be accessed using the leaked password too. 
 
 A small technical detail: Passwords are usually stored on servers for whichever service/website you use. However, to increase security, the passwords are never saved as they are (this is called plaintext). When you register, the password goes through a mathematical function which derives a very large number that is called the hash from the password you entered. After that, if everything is implemented well. No one should ever know what your password is! When you try to login, the server hashes the password you entered and compares it to the one stored on the server before letting you log in.
-{.:info}
+{:.info}
 
 Have any of your current passwords been leaked before? Well, why don't you go over to [haveibeenpwned.com](https://haveibeenpwned.com/) and find out! This website will show you which websites you use have been hacked and if your password was found in the database. If your password was weak, a hacker may have been able to figure out what it is. It is a great idea to change the passwords for the accounts (and everywhere else you use that same password) that appear on that page.
 
@@ -85,12 +85,12 @@ Now you may be asking, what's a strong password? A strong is long, doesn't conta
 If your wife is called Linda and your birthday is on the 21<sup>st</sup> of January 1977. `Linda*21011977` is a **horrible** password. It is "long", has a special character, a number, and mixed-case characters. However, anyone who spends maybe 3 minutes on your Facebook profile, Instagram, Twitter, or anywhere you have personal info posted should be able to figure out your birthday and your wife's name. They can then start guessing and trying different combinations such as `linda21011977`, `21011977-linda`, etc... It goes without saying that this doesn't apply to your birthday and your wife's name only. It applies to the birthdays of friends and relatives, places you've lived, and things you like. Anything that could be figured out from your public profiles or found through social engineering is a big no.
 
 To avoid confusion, keep in mind that the hacker won't be using the regular login screen which has a timeout after usually 3 tries. They'd usually have to obtain your password's hash from a leak or similar.
-{.:info}
+{:.info}
 
 A good master password would be something like `Junkyard-Museum-Dr1ver-Apple` which makes absolutely no sense and has nothing to do with you. You can also create a fun story in your head to remember it!
 
 I really shouldn't have to mention that using that specific password is not a good idea. Generate and use something similar, but not that exact one.
-{.:error}
+{:.error}
 
 ### How do I get Started?
 1. Choose a password manager
