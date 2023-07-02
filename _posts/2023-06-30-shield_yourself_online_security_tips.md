@@ -80,7 +80,7 @@ A password manager is simply software that generates strong passwords for your o
 ### Master Password?
 Well, the master password for your password manager is crucial. This is a password that has to be strong, easy to remember for yourself, and at the same time long enough to not be guessed. 
 
-Now you may be asking, what's a strong password? A strong is long, doesn't contain any personal information, and has a good combination of mixed-case characters, numbers, and special characters.
+Now you may be asking, what's a strong password? A strong password is long, doesn't contain any personal information, and has a good combination of mixed-case characters, numbers, and special characters.
 
 #### Example
 If your wife is called Linda and your birthday is on the 21<sup>st</sup> of January 1977. `Linda*21011977` is a **horrible** password. It is "long", has a special character, a number, and mixed-case characters. However, anyone who spends maybe 3 minutes on your Facebook profile, Instagram, Twitter, or anywhere you have personal info posted should be able to figure out your birthday and your wife's name. They can then start guessing and trying different combinations such as `linda21011977`, `21011977-linda`, etc... It goes without saying that this doesn't apply to your birthday and your wife's name only. It applies to the birthdays of friends and relatives, places you've lived, and things you like. Anything that could be figured out from your public profiles or found through social engineering is a big no.
@@ -141,7 +141,7 @@ Think of something like this picture above but for your social media profiles. I
 - **Your personal schedule**: When you're out for work, when you're in the gym, etc...
 - **Personal details**: Your birthday, your exact wedding day (i.e. anniversary date), etc...
 
-Malicious actors can use this information against you in many different ways. One of which is impersonation, they may be able to impersonate you using the information you have made public. They could also tie the information with the real world and performs malicious actions such as theft.
+Malicious actors can use this information against you in many different ways. One of which is impersonation, they may be able to impersonate you using the information you have made public. They could also tie the information with the real world and perform malicious actions such as theft.
 
 Bonus: This isn't just limited to what you post yourself online. Check the permissions of your phone apps, see if any of them are collecting your location, accessing your files, or recording using your microphone when they shouldn't.
 {:.success}
