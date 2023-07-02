@@ -140,6 +140,8 @@ Think of something like this picture above but for your social media profiles. I
 - **Your personal schedule**: When you're out for work, when you're in the gym, etc...
 - **Personal Details**: Your birthday, your exact wedding day (i.e. anniversary date), etc...
 
+Malicious actors can use this information against you in many different ways. One of which is impersonation, they may be able to impersonate you using the information you have made public. They could also tie the information with the real world and performs malicious actions such as theft.
+
 Bonus: This isn't just limited to what you post yourself online. Check the permissions of your phone apps, see if any of them are collecting your location, accessing your files, or recording using your microphone when they shouldn't.
 {:.success}
 
