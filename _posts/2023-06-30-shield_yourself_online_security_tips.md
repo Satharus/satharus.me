@@ -164,5 +164,4 @@ This boils down to maybe three things you can do without going through too much 
 
 Thanks a lot for reading! I really hope this post has made you realise how small things you can do can help you go a long way in your online security. I hope it also showed you how small things we dismiss as unimportant may be a security or privacy risk to us! If you ever feel like the things mentioned here are too much effort, just remember that convenience and security are two opposite sides of the scale. You can't have both fully at any given time, but you can compromise based on how much risk you can afford and how much effort you can do.
 
-If you liked this post, please share it with your friends who are worried that they are being surveilled by the Vice City mafia.
-
+If you liked this post, please share it with your friends who are worried that they are being surveilled by The Galactic Empire.
