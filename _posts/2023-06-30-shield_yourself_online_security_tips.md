@@ -3,7 +3,7 @@ layout: article
 title: "Shield Yourself: Five Tips to Strengthen your Online Security" 
 categories: Cybersecurity
 author: Ahmed Elmayyah
-tags: [Tech, Cybersecurity Awareness, Guide, Privacy]
+tags: [Cybersecurity, Cybersecurity Awareness, Guide, Privacy]
 mode: normal 
 header:
   theme: dark
