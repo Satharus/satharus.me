@@ -44,7 +44,7 @@ Combine two or more of those and you have got a pretty functional 2FA system.
 Any two or more of them. You can use your fingerprint via your phone. You can use a physical USB key such as [YubiKey](https://www.yubico.com). You can use an authenticator app on your phone such as [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2).
 
 DO NOT USE YOUR PASSWORD MANAGER (see the next section) AS YOUR MFA. This makes it essentially a single factor as both methods of authentication are accessed from the same application.
-{.:error}
+{:.error}
 
 ## \#2: Use a Password Manager
 
