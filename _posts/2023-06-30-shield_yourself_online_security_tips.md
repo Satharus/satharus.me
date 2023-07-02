@@ -35,7 +35,7 @@ You see, we often think of usernames and passwords as a factor of authentication
 {: style="text-align:center"}
 ![](/assets/images/shield-yourself-online-security-tips/2fa.png)
 
-Combine two or more of those and you have got a pretty functional 2FA system.
+Combine two or more of those and you have got a pretty functional MFA system.
 
 ### Example
 - You login with your password (something you know) and get an SMS with a code on your phone (something you have) used to verify that this is you logging in
