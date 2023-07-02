@@ -167,11 +167,11 @@ This boils down to maybe three things you can do without going through too much 
 
 ## Summary
 Here is a nice tl;dr for you if you just want the tips right away!
-    1. Start using MFA everywhere
-    2. Use a password manager, make your passwords stronger
-    3. Avoid as much as you can entering your debit/credit card number anywhere
-    4. Be very careful what you post online, is it really necessary?
-    5. Install an antivirus, keep it updated, avoid plugging your devices into anything untrusted and vice versa
+ 1. Start using MFA everywhere
+ 2. Use a password manager, make your passwords stronger
+ 3. Avoid as much as you can entering your debit/credit card number anywhere
+ 4. Be very careful what you post online, is it really necessary?
+ 5. Install an antivirus, keep it updated, avoid plugging your devices into anything untrusted and vice versa
 
 
 Thanks a lot for reading! I really hope this post has made you realise how small things you can do can help you go a long way in your online security. I hope it also showed you how small things we dismiss as unimportant may be a security or privacy risk to us! If you ever feel like the things mentioned here are too much effort, just remember that convenience and security are two opposite sides of the scale. You can't have both fully at any given time, but you can compromise based on how much risk you can afford and how much effort you can do.
