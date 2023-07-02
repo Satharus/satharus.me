@@ -153,7 +153,7 @@ Bonus: This isn't just limited to what you post yourself online. Check the permi
 
 Protecting your computer or phone is perhaps the most crucial step. No security or privacy really matters if your device gets malware or gets stolen, right? I mean, sure, maybe you don't have important files but aren't you logged in from your browser on important accounts?
 ### Software Protection
-This is quite simple. Invest in a proper anti-malware solution (also known as an antivirus). There are way too many solutions out there. I will not recommend any of them, just do your research and buy whatever works for you and is within your budget. And please, please, don't pirate your antivirus. That is one of the worst things you can do.
+This is quite simple. Invest in a proper anti-malware solution (also known as an antivirus) and keep it updated. There are way too many solutions out there. I will not recommend any of them, just do your research and buy whatever works for you and is within your budget. And please, please, don't pirate your antivirus. That is one of the worst things you can do.
 
 ### Physical Protection
 This boils down to maybe three things you can do without going through too much hassle:
@@ -163,7 +163,16 @@ This boils down to maybe three things you can do without going through too much 
 - Avoiding plugging unknown devices into your devices or vice versa, including:
 	- USB drives you found somewhere
 	- Mice/Keyboards/Thunderbolt docks that aren't from a trusted person
-	- Public charging sockets for phones
+	- Public USB charging sockets or stations for phones
+
+## Summary
+Here is a nice tl;dr for you if you just want the tips right away!
+    1. Start using MFA everywhere
+    2. Use a password manager, make your passwords stronger
+    3. Avoid as much as you can entering your debit/credit card number anywhere
+    4. Be very careful what you post online, is it really necessary?
+    5. Install an antivirus, keep it updated, avoid plugging your devices into anything untrusted and vice versa
+
 
 Thanks a lot for reading! I really hope this post has made you realise how small things you can do can help you go a long way in your online security. I hope it also showed you how small things we dismiss as unimportant may be a security or privacy risk to us! If you ever feel like the things mentioned here are too much effort, just remember that convenience and security are two opposite sides of the scale. You can't have both fully at any given time, but you can compromise based on how much risk you can afford and how much effort you can do.
 
