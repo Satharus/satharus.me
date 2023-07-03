@@ -47,6 +47,8 @@ Any two or more of them. You can use your fingerprint via your phone. You can us
 DO NOT USE YOUR PASSWORD MANAGER (see the next section) AS YOUR MFA. This makes it essentially a single factor as both methods of authentication are accessed from the same application.
 {:.error}
 
+Also, just a small side note: If an alternative to SMS 2FA exists for the service you are using, please use it instead. SMS 2FA isn't as strong as for example authenticator app 2FA. However, it is still way better than no 2FA.
+
 ## \#2: Use a Password Manager
 
 {: style="text-align:center"}
