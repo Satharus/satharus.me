@@ -17,9 +17,9 @@ key: page-about
 
 ## About Me 
 
-A little bit about myself: My real name is Ahmed Elmayyah(AKA Satharus in some places), I graduated from the Faculty of Computer and Information Sciences, Computer Systems Department, Ain Shams University in July 2021. I'm a cybersecurity enthusiast and researcher, tinkerer, and a strong supporter of free/libre software and decentralisation. I currently work as a Sr. DFIR Engineer. Sometimes I do purple-teaming too. I am also a [GCFA](https://www.credly.com/badges/a30348b4-b7a3-40ed-ae0b-f6e5bf79a7ec/public_url) and an [eCRE](https://verified.elearnsecurity.com/certificates/5933b8e7-1e4b-4b33-bf39-25d38ad2433c).
+A little bit about myself: My real name is Ahmed Elmayyah(AKA Satharus in some places), I graduated from the Faculty of Computer and Information Sciences, Computer Systems Department, Ain Shams University in July 2021. I'm a cybersecurity enthusiast and researcher, tinkerer, and a strong supporter of free/libre software and decentralisation. I currently work as a Hardware and Firmware Threat Research Analyst at HP. Sometimes I do purple-teaming too. I am also a [GCFA](https://www.credly.com/badges/a30348b4-b7a3-40ed-ae0b-f6e5bf79a7ec/public_url) and an [eCRE](https://verified.elearnsecurity.com/certificates/5933b8e7-1e4b-4b33-bf39-25d38ad2433c).
 
-I was born in Cairo, Egypt and grew up in the town of Cumbernauld in Scotland. My family moved back to Cairo -where I am currently living- when I was around 10.
+I was born in Cairo, Egypt and grew up in the town of Cumbernauld in Scotland. My family moved back to Cairo -where I lived for 13 years- when I was around 10. Now, I live in Bristol, England. What a weird journey, huh?
 
 My hobbies have mostly been tech-related, such as electronics, cybersecurity, custom PC building and hardware, videogames([add me on Steam](https://steamcommunity.com/id/Satharus/)), and programming. I also enjoy cycling, swimming, writing, research, and progressive rock music.
 

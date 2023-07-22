@@ -15,6 +15,7 @@ I usually like to tinker with low level programming, reverse engineering, Linux,
 
 Here's some of the work I am proud of, in no particular order:
 
+- [The 4043](https://satharus.me/archive.html?tag=8Bit+Computer): A Ben Eater-inspired Turing complete 8Bit breadboard computer using TTL chips, presented in a blog post trilogy which explains computer architecture and how it would map to such a project
 - Check out some of my [Bash Snippets](https://github.com/Satharus/Bash-Snippets)
 - Full 128-bit [AES Encryption](https://github.com/Satharus/AES-Encryption) written in x86 assembly without using the AES-NI extension. Alongside is the [NASM template](https://github.com/Satharus/NASM-Template) for writing quick assembly programs
 - The not so [chad shell](https://github.com/Satharus/Chell)
