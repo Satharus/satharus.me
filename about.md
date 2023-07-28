@@ -25,7 +25,7 @@ My hobbies have mostly been tech-related, such as electronics, cybersecurity, cu
 
 “Satharus” was the name of my character in a couple of RPG games during high school and it just kinda stuck with me.
 
-You can check some of [my work here](/mywork.html).
+You can check some of [my work here](/mywork.html). Needless to say, any ideas, views, and opinions depicted on this blog are completely my own and do not represent or reflect on any ideas, views, and opinions related to my employer whatsoever.
 
 ## Subscribe
 You can subscribe (completely free of charge!) to get my latest posts delivered right to your inbox!
