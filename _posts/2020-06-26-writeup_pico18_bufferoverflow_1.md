@@ -16,14 +16,14 @@ article_header:
     src: /assets/images/writeup-pico18-bufferoverflow-1/pico18_bof1_header.jpg
 cover: /assets/images/writeup-pico18-bufferoverflow-1/pico18_bof1_cover.jpg
 ---
->I wrote this post back in late May 2019 but hadn’t published it and I don’t really remember why I didn’t. It was supposed to be a follow up for the post on the [buffer overflow basics](https://satharus.me/cybersecurity/2019/05/22/buffer_overflows_the_basics.html). 
+>I wrote this post back in late May 2019 but hadn’t published it and I don’t really remember why I didn’t. It was supposed to be a follow up for the post on the [buffer overflow basics](/cybersecurity/2019/05/22/buffer_overflows_the_basics.html). 
 >
 > Anyway since I’ve already written it, here it is.
 <!--more-->
 
 For those that don’t know, [PicoCTF](https://picoctf.com/) is a free cybersecurity CTF game targeted at middle and high school students. It has some really nice challenges that get harder as you progress, starting out with very easy ones. I always recommend it as a good starting point for CTFs. This specific challenge is a good starting point to start learning about buffer overflows and how to exploit them.
 
-If you don’t know what CTFs are, check out my article: [The Art of Cybersecurity (And how to get into it)](https://satharus.me/cybersecurity/2019/12/02/the_art_of_cybersecurity.html) for some starter info.
+If you don’t know what CTFs are, check out my article: [The Art of Cybersecurity (And how to get into it)](/cybersecurity/2019/12/02/the_art_of_cybersecurity.html) for some starter info.
 
 > “Okay now you’re cooking! This time can you overflow the buffer and return to the flag function in this [program](https://2018shell.picoctf.com/static/d6146450a41960f6ce43dbfb300d9ef4/vuln)? You can find it in /problems/buffer-overflow-1_0_787812af44ed1f8151c893455eb1a613 on the shell server.” [Source](https://2018shell.picoctf.com/static/d6146450a41960f6ce43dbfb300d9ef4/vuln.c). “
 

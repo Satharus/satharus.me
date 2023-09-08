@@ -135,7 +135,7 @@ Now to explain the compilation part, remember the `-fno-stack-protector` option 
 
 You can learn more about [stack protection, here](https://www.proggen.org/doku.php?id=security:memory-corruption:protection:stack-protection).
 
-Here’s a post showing an [actual buffer overflow](https://satharus.me/cybersecurity/2020/06/26/writeup_pico18_bufferoverflow_1.html) exploit in a CTF challenge. Give it a read, now that you know what a buffer overflow is.
+Here’s a post showing an [actual buffer overflow](/cybersecurity/2020/06/26/writeup_pico18_bufferoverflow_1.html) exploit in a CTF challenge. Give it a read, now that you know what a buffer overflow is.
 
 Thanks a lot for reading this post. I hope you enjoyed it and learnt something new!
 Share it with your friends if you think they’ll find it interesting. I’ll appreciate any questions or feedback!

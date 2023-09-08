@@ -19,7 +19,7 @@ cover: //assets/images/8bit-computer-part3/8bit_part3_cover.jpg
 
 In the last two posts, we covered quite a bit of the von Neumann architecture and how The 4043 breadboard computer maps to it. This is the third post in a 3-part series on computer architecture 
 <!--more-->
-and how I built an 8Bit breadboard computer inspired by Ben Eater. If you haven't read posts [one](https://satharus.me/tech/2023/04/05/8bit_computer_part1.html) and [two](https://satharus.me/tech/2023/04/07/8bit_computer_part2.html), go read them first.
+and how I built an 8Bit breadboard computer inspired by Ben Eater. If you haven't read posts [one](/tech/2023/04/05/8bit_computer_part1.html) and [two](/tech/2023/04/07/8bit_computer_part2.html), go read them first.
 
 {: style="text-align:center"}
 ![Overview](/assets/images/8bit-computer-part3/overview.jpg)
