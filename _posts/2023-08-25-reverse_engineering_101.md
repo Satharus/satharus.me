@@ -201,6 +201,6 @@ You may also want to check [OpenSecurityTraining2’s learning paths](https://op
 	- [Reverse Engineering Workshops](https://malwareunicorn.org/#/workshops) by [Malware Unicorn](https://twitter.com/malwareunicorn)
 	- [Reverse Engineering Reading List](https://github.com/onethawt/reverseengineering-reading-list)
 
-That's about it, thanks for reading! I hope you learned something new from this post. If you did, or you at least enjoyed it (or both), please share it with your friends who enjoy starting at hex bytes and assembly code for hours upon end.
+That's about it, thanks for reading! I hope you learned something new from this post. If you did, or you at least enjoyed it (or both), please share it with your friends who enjoy staring at hex bytes and assembly code for hours upon end.
 
 Some icon and image credits: WikiMedia Commons, Flaticon, Pixabay, The Noun Project, Pixel perfect
