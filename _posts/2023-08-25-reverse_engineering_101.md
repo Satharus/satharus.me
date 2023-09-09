@@ -52,7 +52,7 @@ In this case, the design/implementation is the source code. You can check [The L
 {: style="text-align:center"}
 ![](/assets/images/reverse-engineering-101/re_process.png)
 
-We can do exactly the opposite of that and then we would've reverse engineered a program. With only one difference: we don't go back to the original source code. We only want to understand how the program is behaving. We can't get the original source code from the binary, and luckily, that doesn't matter! It doesn't matter what a variable's name is or how a developer decided to write a function. As long as we have a behaviour, we can reverse engineer it.
+We can do exactly the opposite of that and then we would've reverse engineered a program. With only one difference: we don't go back to the original source code. We only want to understand how the program is behaving. We can't get the exact original source code from the binary, and luckily, that doesn't matter! It doesn't matter what a variable's name is or how a developer decided to write a function. As long as we have a behaviour, we can reverse engineer it and we can get pretty close to what the developer wrote. Just not _the_ exact same source code.
 
 To explain this a bit further, you will understand what the binary is doing and what its internals are. But, you will never be able to know what the actual code the developer wrote was. Which, again, doesn't matter. You know what the program does and how it does it. That's the goal of reverse engineering.
 
