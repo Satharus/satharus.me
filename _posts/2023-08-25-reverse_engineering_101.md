@@ -54,6 +54,12 @@ In this case, the design/implementation is the source code. You can check [The L
 
 We can do exactly the opposite of that and then we would've reverse engineered a program. With only one difference: we don't go back to the original source code. We only want to understand how the program is behaving. We can't get the original source code from the binary, and luckily, that doesn't matter! It doesn't matter what a variable's name is or how a developer decided to write a function. As long as we have a behaviour, we can reverse engineer it.
 
+To explain this a bit further, you will understand what the binary is doing and what its internals are. But, you will never be able to know what the actual code the developer wrote was. Which, again, doesn't matter. You know what the program does and how it does it. That's the goal of reverse engineering.
+
+We will get to know more about how reversing is done and what will be looking at to do so when we talk about disassemblers and decompilers later on in this post!
+
+For now, let's see how any of this is useful.
+
 ### Applications of Reverse Engineering
 Reverse Engineering has many uses. Here is some of them!
 
