@@ -115,7 +115,7 @@ The assembly is for demonstration only. Actual compiled code would look slightly
 {:.warning}
 ### Preprocessing
 The preprocessor is a component of the compiler and it processes header files, macro expansions, conditional compilations, etc...
-For example, before preprocessing you can have a macro like this in our code:
+For example, before preprocessing we can have a macro like this in our code:
 ```c
 #define SIZE 2*1024 //Macro here
 int main()
