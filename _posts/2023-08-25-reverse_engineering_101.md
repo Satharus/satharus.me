@@ -52,7 +52,7 @@ In this case, the design/implementation is the source code. You can check [The L
 {: style="text-align:center"}
 ![](/assets/images/reverse-engineering-101/re_process.png)
 
-We can do exactly the opposite of that and then we reverse engineer a program. With only one difference: we don't go back to the original source code. We only want to understand how the program is behaving. We can't get the original source code from the binary, and luckily, that doesn't matter! It doesn't matter what a variable's name is or how a developer decided to write a function. As long as we have a behaviour, we can reverse engineer it.
+We can do exactly the opposite of that and then we would've reverse engineered a program. With only one difference: we don't go back to the original source code. We only want to understand how the program is behaving. We can't get the original source code from the binary, and luckily, that doesn't matter! It doesn't matter what a variable's name is or how a developer decided to write a function. As long as we have a behaviour, we can reverse engineer it.
 
 ### Applications of Reverse Engineering
 Reverse Engineering has many uses. Here is some of them!
@@ -73,7 +73,7 @@ Lower level software and firmware are often more locked down and complex. A lot 
 When you want to interface two electronic components, you may have to reverse engineer one of them (or both) to find out how it works and what would be the suitable way to connect it to the other components. This also helps when an old component becomes obsolete and you want to replace it with a newer component but there isn't documentation on how they work together.
 
 ## Deep Dive: Software Reverse Engineering
-At this point, I really recommend that you go and read [The Life of a Binary](/tech/2023/07/28/the_life_of_a_binary.html) if you haven't. Anyway, the end product of the building process of software leads to use having a program that behaves in a certain way. This program is actually more or less just machine code (AKA 0s and 1s) telling the CPU what to do. _Sure_, there are other elements to it, which we discuss in the other blog post mentioned. The summary is, we have a program which is basically a file of machine code and we want to reverse engineer it.
+At this point, I really recommend that you go and read [The Life of a Binary](/tech/2023/07/28/the_life_of_a_binary.html) if you haven't. Anyway, the end product of the building process of software leads to having a program which behaves in a certain way. This program is actually more or less just machine code (AKA 0s and 1s) telling the CPU what to do. _Sure_, there are other elements to it, which we discuss in the other blog post mentioned. The summary is, we have a program which is basically a file of machine code and we want to reverse engineer it.
 
 How can we do so?
 
@@ -94,7 +94,7 @@ Disassemblers are generally used to get to the deepest details of what a binary 
 {: style="text-align:center"}
 IDA Free 8.3, a very powerful disassembler and debugger. Also a bit of a nicer tool to use compared to `objdump` 
 
-Some malware and _sometimes_ legitimate software try to trick disassemblers into displaying the wrong assembly code by exploiting the way they work. It is an interesting topic which you may want to read about.
+Some malware and _sometimes_ legitimate software try to trick disassemblers into displaying the wrong assembly code by exploiting the way they work. Anti-disassembly is a very interesting topic which you may want to read about.
 {:.info}
 
 ### Debuggers
