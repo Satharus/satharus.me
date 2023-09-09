@@ -156,7 +156,7 @@ The assembly process assembles the human-readable assembly code into a machine c
 
 Notice how, on the right, the file is not executable, and to read it in a human readable format, you need to use special software known as a disassembler (check the next blog post).
 
-Note that during compilation, one line of code could be one instruction or multiple instruction when compiled to assembly. But, when the assembly is converted to machine code, it is mapped one-to-one where each assembly instruction is represented in its machine code format. 
+Note that during compilation, one line of code could be one instruction or multiple instructions when compiled to assembly. But, when the assembly is converted into machine code, it is mapped one-to-one where each assembly instruction is represented in its machine code format. 
 tl;dr: Assembly is the human readable form of machine code.
 {:.info}
 
