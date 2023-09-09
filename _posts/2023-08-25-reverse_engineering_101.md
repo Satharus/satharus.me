@@ -155,7 +155,7 @@ Notice how in dnSpy, there is no assembly to read or anything. You get a decompi
 ### Other Useful Tools
 Some other tools can be useful to find out information about binaries you want to reverse. Some examples:
 - [Explorer Suite](https://ntcore.com/?page_id=388): A complete suite of Windows binary utilities
-- [GNU strings](https://linux.die.net/man/1/strings): Used to find readable strings in binaries
+- [GNU Binutils](https://www.gnu.org/software/binutils/): A suit of utilities for Linux binaries. Contains the popular tool [strings](https://linux.die.net/man/1/strings) which can be used to find readable strings in binaries
 - Analysers, such as:
 	- [capa](https://github.com/mandiant/capa) by Mandiant: Can analyse some of the capabilities a binary has such as encryption, encoding, internet connectivity, etc...
 	- [binwalk](https://github.com/ReFirmLabs/binwalk) by ReFirm Labs: Has useful features such as entropy calculation and file extraction by signature
