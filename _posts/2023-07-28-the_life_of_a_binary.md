@@ -51,7 +51,7 @@ A PE file is a Portable Executable, a Windows format. Usually seen with extensti
 {:.success}
 
 ### The Compiler
-The source code files are passed to a compiler, which compiles the high-level human-written code into a machine code. Instructions which can be executed by the CPU. Your CPU can't execute `x++` but it can execute `inc eax`, for example. What a compiler does is basically that. The result of the output from a compiler is an object file. A file containing machine code.
+The source code files are passed to a compiler, which compiles the high-level human-written code into machine code. Instructions which can be executed by the CPU. Your CPU can't execute `x++` but it can execute `inc eax`, for example. What a compiler does is basically that. The result of the output from a compiler is an object file. A file containing machine code.
 
 ### The Linker
 When developers write code, they often use libraries which are basically code that has been written by someone else before for a specific purpose and then other developers can just reuse it in their code. Libraries contain functions, and functions are referenced in code by developers. For example:
@@ -72,7 +72,7 @@ This is where the linker comes in. The linker sees which references from other l
 But, how does the OS load this program and make it work?
 
 ## The Life of a Binary
-The OS reads the file, loads the content of it where it is appropriate for it to execute, and loads any libraries needed by the binary. Libraries, are, after all, just programs. The only difference is that you can't double click and run them like normal programs.
+The OS reads the file, loads the content of it where it is appropriate for it to execute, and loads any libraries needed by the binary. Libraries, after all, are just programs. The only difference is that you can't double click and run them like normal programs.
 
 This is a very simple abstraction, but if I go into how programs are loaded and the actual structures of binary files, this post will be way too long and you will probably click off now. So, let's talk about it some other day over a cup of tea. For now, check the link to a course at the end of this post to get an idea on where you can learn more.
 {:.warning}
@@ -81,7 +81,7 @@ This is a very simple abstraction, but if I go into how programs are loaded and 
 {: style="text-align:center"}
 ![](/assets/images/the-life-of-a-binary/life_of_a_binary.png)
 
-That way, your program is now running and it has a process id (PID). What started as some Lines of Code (LoC) is now a running program with an id. Gosh, they grow up so quickly 🥹.
+That way, your program is now running and it has a process id (PID). What started as some Lines of Code (LoC) is now a running program with an id. Gosh, they grow up so quickly ![](/assets/images/the-life-of-a-binary/face.png).
 
 ## The Compilation Process
 Let's take a bit of a deeper look on the whole process. We now have a high level understanding of how lines of code become a running program. Let's take a look under the hood and see the four stages of what a modern compiler like `gcc` for example would do.
