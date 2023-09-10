@@ -21,7 +21,7 @@ Reverse engineering... Could it be just the opposite of engineering? Is it that 
 Reverse engineering is a very broad field which has lots of applications. Not just that, but almost anything can be reverse _engineered_ too. Let's take a look at it in this post.
 <!--more-->
 ## Reverse Engineering
-Reverse engineering is basically understanding the internals of something without having access to the original design. While a lot of people think of software when the words "reverse engineering" are said. It, unsurprisingly, isn't limited to software.
+Reverse engineering is basically understanding the internals of something without having access to the original design. While a lot of people think of software when the words "reverse engineering" are said, it, unsurprisingly, isn't limited to software.
 
 Anything that has properties and behaviour can be reverse engineered. For example, mechanical parts can be reverse engineered to create a replacement for a broken part in a mechanical system if a replacement is no longer being sold. You would have to reverse engineer the system, know where that part fits, what its dimensions are, what material it is made of, etc...
 
@@ -61,7 +61,7 @@ We will get to know more about how reversing is done and what will be looking at
 For now, let's see how any of this is useful.
 
 ### Applications of Reverse Engineering
-Reverse Engineering has many uses. Here is some of them!
+Reverse Engineering has many uses. Here are some of them!
 
 #### Exploit and Malware Development
 To develop malware and exploits for a specific platform, you may need to reverse engineer parts of it to understand how it works. In this case, it is particularly useful if you're doing a black box penetration test where you don't know much about the platform before-hand.
