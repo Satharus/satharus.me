@@ -65,7 +65,7 @@ int main()
 }
 ```
 
-The above program prints "Hello, world!". However, you don't see a definition for `printf()` in my code. That is because I included `stdio.h`, the standard C library for input and output (I/O). This tells the compiler that my program will have to link to that library in order to work!
+The above program prints "Hello, world!". However, you don't see a definition for `printf()` in my code. That is because I included `stdio.h`, the standard C library for input and output (I/O). This tells the compiler to include that library where the function definition lies. The compiler would then have to link to that library in order to work!
 
 This is where the linker comes in. The linker sees which references from other library the binary needs, and it links the binary to them. i.e. It tells the binary where the function is in the library, and it writes information in the binary for the OS to know that this program needs this library.
 
