@@ -36,6 +36,7 @@ A quick refresher, we talked in the first post about the "bare minimum" computer
 - RAM (✓)
 - Bus to connect them together (✓)
 - Clock to sync all of these components together (✓)
+
 **Key:**
 - ✓ - Discussed
 - — - Still To be Discussed
