@@ -35,8 +35,4 @@ Here are some other posts I've published elsewhere:
 - [Privacy 101 : How to protect your privacy over the internet](https://mnztechnology.com/blog/privacy-101-how-to-protect-your-privacy-over-the-web) (MNZ Technology Blog - 21/6/2020)
 
 
-## My GitHub Stats
-
-
-[![Satharus's github stats](https://github-readme-stats.vercel.app/api?username=Satharus&show_icons=true&theme=darcula&include_all_commits=true&count_private=true)](https://github.com/Satharus?tab=repositories) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Satharus&langs_count=6&layout=compact&theme=darcula&hide=html,javascript,scss&exclude_repo=SecurityPackage,Image-quantization)](https://github.com/Satharus?tab=repositories)
-
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Satharus&langs_count=6&layout=compact&theme=darcula&hide=html,javascript,scss&exclude_repo=SecurityPackage,Image-quantization)](https://github.com/Satharus?tab=repositories)
