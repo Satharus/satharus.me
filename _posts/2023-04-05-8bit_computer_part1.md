@@ -25,16 +25,16 @@ Well, that really isn't far from what has been happening for the last 2 weeks ðŸ
 
 Actually, I [started this project back in January 2021](https://twitter.com/aelmayyah/status/1346167322470457347) but had to delay it for a while. I ended up [disassembling it](https://twitter.com/aelmayyah/status/1484447871055417344) at the start of last year and [started over from scratch 2 weeks ago](https://twitter.com/aelmayyah/status/1638700480804290560). The only difference is, this time I had a lot more knowledge, better wires, and I had written some documentation last time regarding the mistakes that I made. This made things significantly easier the second time and I'd love to share these tips and experiences with you! Anyway, let's take it from the start, shall we?
 
-## The Beginning
+# The Beginning
 I've always wondered how computers work. I mean, I do know assembly and I have a pretty good idea of how operating systems work and how programs execute. I also studied a bit of computer architecture and all that good stuff. However, I still always wondered how computers _actually_ worked. How can all of this "magic" happen through electrical signals of 1s and 0s?
 
 Then I discovered [Ben Eater](https://www.youtube.com/@BenEater)'s channel and quickly started enjoying and learning from every single video on it. I started watching the "Building an 8-bit breadboard computer!" series. Fast forward a few videos and I was motivated to build something similar to the whole thing to actually understand it and have some hands-on experience with it! 
 
 So, I headed over to [/r/BenEater](https://www.reddit.com/r/beneater/) and read some posts from the community and other people who attempted this project, created a parts list in a spreadsheet, printed it, and headed over to Bab Ellouq in Cairo. The central hub for all electronic components ranging from resistors all the way up to full-blown prototype and development kits and everything in between. 5 hours later, I had most of the parts and the alternatives I needed from different stores. Now it was time to find out, how computers work!
 
-## What is in a Computer?
+# What is in a Computer?
 Well, to answer this question, we need to familiarise ourselves with the von Neumann architecture.
-### The von Neumann Architecture
+## The von Neumann Architecture
 
 {: style="text-align:center"}
 ![Von Neumann](/assets/images/8bit-computer-part1/von_neumann.png)
@@ -58,7 +58,7 @@ A clock signal example
 There are other architectures such as the Harvard architecture but we won't get into them.
 {:.info}
 
-### The "Bare Minimum" Computer
+## The "Bare Minimum" Computer
 So, to summarise - at the bare minimum, a computer needs the following:
 - CPU: Registers, ALU, Control Unit
 - RAM
@@ -70,12 +70,12 @@ So, to summarise - at the bare minimum, a computer needs the following:
 {: style="text-align:center"}
 ![overview.jpg](/assets/images/8bit-computer-part1/overview.jpg)
 
-## Some Primers
+# Some Primers
 Before we go any further, let's first clear some basics that will help us throughout the entire project.
-### Components List
+## Components List
 I compiled the list of components I bought and the list of components that ended up making it to the build, [in this spreadsheet](https://docs.google.com/spreadsheets/d/1wM5BfGXj_jaKyjOd8v8u36IEUIEN2xiD_yTdd1yt2L8/edit?usp=sharing). I've listed them with their prices back when when I bought them. However, I bought these components back in January 2021. So, as you can imagine, the prices have probably changed by now. Fear not, though! My good friend and electronics geek [@hegzploit](https://twitter.com/hegzploit) created [bgneh](https://github.com/hegzploit/bgneh) which can help you find the cheapest electronic components in a couple of stores. I'll get to how these components were used and explain more about the alternatives I used for each unavailable component later.
 
-#### Wiring
+### Wiring
 The first time I attempted this project, I didn't find 22 AWG copper wires. I instead bought CAT6 wires. That was genuinely a horrible idea. At first, I blamed the breadboard quality because the wires never stayed in place. However, it turns out the wires are too thin and really aren't a good fit for breadboards... Or at least for projects this big.
 
 What I'd recommend is getting 22 AWG copper wires or equivalent from electrical supply stores, or buying them from Amazon from another country if you can't find them at all. Ben recommends [the Elenco ones](http://amzn.to/2uU3D1b). However, I bought a brand called [TUOFENG](https://www.amazon.com/TUOFENG-Hookup-Wires-6-Different-Colored/dp/B07TX6BX47). The ones I bought were more than fine, but I still found them a little too thick which made wiring in some places very difficult as throughout the project the breadboards keep getting more crowded. I managed just fine, but I am just giving a tip to anyone wanting to attempt this project.
@@ -84,7 +84,7 @@ While building the B register, I decided to film this to show how I actually bui
 
 <div>{%- include extensions/youtube.html id='rc1f1KjNZNE' -%}</div>
 
-#### LEDs
+### LEDs
 Throughout the project, it was absolute hell trying to fit 5mm LEDs where they're supposed to go. I recommend two of the following options:
 - Get 3mm or rectangular LEDs which take up less space
 
@@ -100,13 +100,13 @@ Image credit: trainelectronics.com, electronicaembajadores.com
 ![LED Bars](/assets/images/8bit-computer-part1/led_bars_soldering.jpg)
 
 
-#### Power
+### Power
 Ben recommends getting a proper power supply that can at least output 1.5-2A. I was personally using my homemade bench power supply which is just an old ATX desktop power supply that I modified. You should also make sure that power is distributed pretty well across the board, you can do so by measuring the voltage at different points in the board far from the power source. The lowest that I was able to get away with before getting into trouble was 3.8V. Your results will vary.
 
 {: style="text-align:center"}
 ![Power Supply](/assets/images/8bit-computer-part1/power_supply.jpg)
 
-### Debugging
+## Debugging
 To debug pretty much any problem in this project, you'll need three things:
 - A good ol' Multimeter
 - Some LEDs like this array on a breadboard which you can connect to certain points and see which values are high and which are low
@@ -118,17 +118,17 @@ To debug pretty much any problem in this project, you'll need three things:
 {: style="text-align:center"}
 Literally all you need
 
-### Community
+## Community
 There is a huge electronics hobbyist community across the whole internet. Whenever you're stuck with something, look it up and see if anyone has had the same or a similar issue before. Following Ben's videos exactly doesn't guarantee that the project will work and you will have to be able to debug your own problems and know how to ask for solutions. Feel free to surf the /r/BenEater subreddit mentioned before. The community there is genuinely amazing and people there have helped me with a couple of things before!
 
 Throughout this series, I won't get into Ben's designs or schematics as he can do a much better job at explaining them than I could. I will just explain any alternatives or changes I've made to his design.
 {:.info}
 
 
-## The Build
+# The Build
 On days 1 to 4, I built the clock module, the ALU, and the A and B registers, and the instruction register. For now, let's focus on the first four (Coloured Purple, Fuchsia, and Red).
 
-### Module 1: The Clock Module
+## Module 1: The Clock Module
 
 {: style="text-align:center"}
 ![Clock Module](/assets/images/8bit-computer-part1/clock_module.gif)
@@ -143,7 +143,7 @@ Cool tip: Get some different capacitor and resistor values to mess around with t
 
 The total build time for the module is approximately 2 hours.
 
-### Module 2: The Registers
+## Module 2: The Registers
 
 The registers are part of the CPU and are used to store data which is being operated on at the moment of the execution. Ben uses 74LS173 4Bit D-Type Register chips to make these registers. You can check out the [schematics here](https://eater.net/8bit/registers).
 
@@ -152,7 +152,7 @@ The registers are part of the CPU and are used to store data which is being oper
 
 The registers were the first challenge that I had to solve. I faced two problems, the first being the unavailability of the 74LS173 chip, the second issue was that my original workaround was missing something which I'll get into in a bit. Things will get a bit more technical now, I hope you enjoy it!
 
-#### Using D Flip-Flops instead of D Registers
+### Using D Flip-Flops instead of D Registers
 These register chips are essentially D flip-flops but with extra functionality: the load and enable pins. In Ben's design, the load pins are used to allow a value to be loaded into the registers. After some research and asking around, I was able to figure out that I could use some other chip to isolate the inputs from the D flip-flops until they are given a load signal. A perfect chip for this is a buffer chip. For this specific case, I decided to go for the 74LS125 Quad 3-State buffer chip.
 
 3-State (pronounced tri-state) here means that the output can be either high, low, or disconnected (which is High Impedance mode, often labelled as Z).
@@ -164,7 +164,7 @@ The way this is set up is that the 125s act as inputs to the 175s and the Enable
 ![D flip-flop register circuit](/assets/images/8bit-computer-part1/d_flipflop.png)
 
 
-#### Figuring out the Flaw
+### Figuring out the Flaw
 At first, this seemed to work fine. After testing it more, I realised that the register isn't holding the value if the clock pulsed when the load signal was high (i.e. not loading). In this case, the register would reset to 0xFF (all 1s).
 
 After checking the truth tables for both of the chips, I figured that I had missed something.
@@ -232,7 +232,7 @@ After checking the truth tables for both of the chips, I figured that I had miss
 
 What was essentially happening is that when the load pin was high, the outputs of the 125 chip would be disconnected from the 175 chip (high impedance mode). This is expected and perfectly normal. The 74LS175 would then behave normally and load the inputs when the clock pulsed, in this case, the inputs defaulted to all 1s because that's what TTL(74 series) chips default to.
 
-#### Fixing the Flaw
+### Fixing the Flaw
 So even though it seemed like we figured things out and created a load function, what we wanted to actually do was to control the clock for the D flip-flop instead. As without a clock, it wouldn't load any new values. There were a couple of solutions:
 - ANDing the load signal with the clock and then connecting the output of the AND gate to the clock pin on the 175 chip
 	- This works perfectly and I actually use it later on in the Flags register. Ben also used it in the output register
@@ -250,12 +250,12 @@ Here is the register's schematic after connecting the multiplexer. For the multi
 
 And that was pretty much it! Each register (A, B, and Instruction) took an average of 2 hours to build. At this point I had posted these updates on Twitter: [Day 1](https://twitter.com/aelmayyah/status/1639041093592313860), [Day 2](https://twitter.com/aelmayyah/status/1639410426633920513), and [Day 3](https://twitter.com/aelmayyah/status/1639798166059876352).
 
-#### Some Nice Tips
+### Some Nice Tips
 - It is nice to label your signal wires using tape or stickers to be able to differentiate them later on
 - It may be a good idea to add stickers to your ICs and label their functions, I personally didn't like doing that. You can try and tell me how it goes!
 - When building the Instruction Register, take care of the breadboard orientation so that you don't have to rewire it again like [I did in the first build](https://twitter.com/aelmayyah/status/1350523295423201280). Make sure it aligns with the rest of the breadboards and can attach to them.
 
-### Module 3: The Arithmetic Logic Unit
+## Module 3: The Arithmetic Logic Unit
 
 The ALU is what gives the computer the ability to perform arithmetic and logic operations. In our case, the ALU uses 4Bit binary adder chips (74LS283) for addition and subtraction. The way subtraction works is that there is a SUB signal which is XORd with each bit going into the adder. This effectively gives us a 1's complement of the number and then a 1 is added through the carry-in for one of the adders. You can check out Ben's video which explains this or check out the [schematic here](https://eater.net/8bit/alu). The ALU's hard wired inputs are the A and B registers.
 
@@ -269,7 +269,7 @@ The ALU took approximately 3 and a half hours to build. At this point, I had pos
 <div>{%- include extensions/youtube.html id='0VUVJRiVRYA' -%}</div>
 
 
-## Conclusion
+# Conclusion
 We've seen what basic computer architecture is and how The 4043 (our computer here) maps to that.
 
 In the first 4 days, I built the clock, the A, B, and Instruction registers, and the ALU. At this point, the build had taken approximately 11 hours and a half. The build looked like this at this stage:

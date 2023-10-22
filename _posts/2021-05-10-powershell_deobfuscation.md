@@ -40,11 +40,11 @@ You generally want to avoid executing the `IEX` cmdlet in order to deobfuscate t
 
 It is worth noting that a quite easy and primitive technique that may work sometimes is using `Write-Output` to get the deobfuscated script. This works in some cases, but we won’t get into too many details on when and why it works.
 
-## Lemon_Duck Cryptominer Hands On
+# Lemon_Duck Cryptominer Hands On
 
 In a couple of my previous IR engagements, I encountered the Lemon_Duck cryptominer which had multiple multi-stage obfuscated PowerShell scripts.
 
-### Scheduled Task: Downloader
+## Scheduled Task: Downloader
 
 The first script was found in a scheduled task.
 ```powershell
@@ -85,7 +85,7 @@ Sending that request gets us a file: a.jsp. The file initially contains the obfu
 
 **Password: infected**
 
-### a.jsp: Stager
+## a.jsp: Stager
 
 ```powershell
 rAAM2XSdp7kIqh7eCPQSEm7vY2MARGRPfF2wIRvMjHdxB/zQFAP1Vw/CRHC3bjz9wErpENVn0y/hh7buezTN4CuFK3/re6FtHnEc4sSy3EL0dhj8X4rD/X/jBYKgziJxRx4bOGvWMXQWoWitlAKQAvlZIMhcy3IhPf5GZza6cF0=
@@ -396,7 +396,7 @@ $params = "&DESKTOP-QTEKH69&09874D56-2136-3D8C-C24F-56EA5E7D6B61&00:0C:29:7D:6B:
 {: style="text-align:center"}
 ![](/assets/images/powershell-deobfuscation/FinalPayload.gif)
 
-### The Final Script
+## The Final Script
 
 Simply by taking a look at this payload, we can see the `IEX` cmdlet at the start, so that we can separate it and write the output into a file as before.
 

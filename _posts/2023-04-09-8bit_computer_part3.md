@@ -27,7 +27,7 @@ and how I built an 8Bit breadboard computer inspired by Ben Eater. If you haven'
 
 In this post, we will be concluding the series. We will discuss the output module (highlighted in green) and the control logic for the computer (everything else that isn't ticked, and the Flags Register which we skipped last time). Let's get started!
 
-## Refresher
+# Refresher
 A quick refresher, we talked in the first post about the "bare minimum" computer which needs:
 - CPU: 
 	- Registers (✓)
@@ -43,7 +43,7 @@ A quick refresher, we talked in the first post about the "bare minimum" computer
 
 By now, we have an idea of how all of these modules work on their own and how they work with each other. What controls them, though? How does a register know when to load a value? When would RAM output a value it is storing at a certain address? We will get into these topics in this post. First, I want to talk about one last module that was built before the control logic: The output module.
 
-## Input/Output
+# Input/Output
 
 {: style="text-align:center"}
 ![Von Neumann](/assets/images/8bit-computer-part3/von_neumann.png)
@@ -58,7 +58,7 @@ Modern computers use chipsets on the motherboard and a lot of other devices to h
 {:.info}
 
 
-### I/O in The 4043
+## I/O in The 4043
 
 {: style="text-align:center"}
 ![Output in the 4043](/assets/images/8bit-computer-part3/output_4043.jpg)
@@ -75,10 +75,10 @@ At the end of this post, I have added a link to a Reddit post where someone adde
 Now we have an idea of everything we need to know in order to start talking about the control unit.
 
 
-## The Control Unit
+# The Control Unit
 The control unit is the actual "manager" of the CPU, in the sense that it tells each module when and what to do so that each instruction is executed properly. In order to understand how the control unit operates, we need to differentiate between three things: a clock cycle, an instruction cycle, and a micro-instruction.
 
-### Clock Cycle
+## Clock Cycle
 A clock cycle is a single pulse of the clock signal. i.e. a single transition from 0V to 5V and then back to 0V again.
 
 {: style="text-align:center"}
@@ -87,7 +87,7 @@ A clock cycle is a single pulse of the clock signal. i.e. a single transition fr
 {: style="text-align:center"}
 Each coloured section here is a single clock pulse
 
-### Instruction Cycle
+## Instruction Cycle
 Every single CPU has an instruction cycle. This cycle is different between different architectures. But, generally, it follows something like the following figure.
 
 {: style="text-align:center"}
@@ -104,22 +104,22 @@ A little bit of trivia, in the x86 architecture(before 64-bit iterations): `nop`
 {:.info}
 
 
-### Micro-Instructions
+## Micro-Instructions
 A micro-instruction is what each instruction divides into. Each instruction is basically a set of actions the computer needs to do. Each action is considered a micro-instruction.
 
 Now, is it safe to assume that each instruction cycle takes 3 clock cycles? No. Each instruction cycle consists of several micro-instructions. In our breadboard computer, we have a max of 8 micro-instructions per instruction. However, actual instructions that are implemented can take anywhere from 2 to 5 micro-instructions. We will get to know why it requires a minimum of 2 in a bit. Each micro-instruction takes one clock cycle.
 
 Micro-instructions are usually labelled as _T_<sub>n</sub> Let's take a look at an example: Say you want to move a value to the A register, the computer would have to do the following micro-instructions:
-#### The Fetch Phase:
+### The Fetch Phase:
 - _T_<sub>1</sub>: Move the content of the program counter into the memory address register
 	- This is to address the instruction that is to be executed, which is kept track of using the program counter
 	- At this point, the memory data register already loaded the value at the memory address since it reads the address from the MAR automatically
 
-#### The Decode Phase:
+### The Decode Phase:
 - _T_<sub>2</sub>: The MDR is set to output its content, the Instruction register is set to load what's on the bus, and the program counter is incremented
 	- Once the Instruction register has loaded the value in memory (the instruction), it is automatically decoded by the control unit and the execution phase is prepared
 
-#### The Execution Phase:
+### The Execution Phase:
 - _T_<sub>3</sub>: The value is output from the instruction register onto the bus and the A register is set to load what's on the bus
 - _T_<sub>4</sub>: The computer does nothing
 - _T_<sub>5</sub>: The computer does nothing
@@ -127,7 +127,7 @@ Micro-instructions are usually labelled as _T_<sub>n</sub> Let's take a look at 
 
 Now to answer the question, why does each instruction need at least 2 micro-instructions? We need one for fetching and one for decoding. Depending on what was decoded, we may or may not need more micro-instructions for the execution phase.
 
-### The Control Word
+## The Control Word
 But, now you're probably wondering: "What is a micro-instruction actually doing?" How does it tell the A register to load what's on the bus or tell the program counter to count?
 
 {: style="text-align:center"}
@@ -135,7 +135,7 @@ But, now you're probably wondering: "What is a micro-instruction actually doing?
 
 The answer is simply through control signals, which the control word consists of.
 
-#### Control Signals
+### Control Signals
 The control word consists of 17 signals. 16 of which are relevant to our microcode. Our computer never uses the `OUTB` signal (which outputs whatever is in the B register to the bus), I just added it for completeness. Thankfully, it sits right in the middle between the high 8 signals and low 8 signals so we can consider it a divider.
 
 Each signal can have two values: high or low. When a signal is high it functions, effectively signalling the module what to do.
@@ -155,13 +155,13 @@ To sum it up, each instruction consists of micro-instructions, and these micro-i
 
 We will visualise this in a bit and trace a program written in 4043 assembly.
 
-##### Implementing the jmp
+#### Implementing the jmp
 I remember asking you to think of a way to implement a `jmp` instruction. Have you thought of one?
 {:.success}
 
 Well, now that we know the control signals for the computer, we can actually use the `LDPC` and depending on our architecture, output the value of some register or memory location to the bus to load it in the program counter. This effectively makes the CPU fetch the next instruction from the address that was loaded into the program counter, making it the next instruction to be executed.
 
-## The 4043 Assembly
+# The 4043 Assembly
 Our computer has a _limited_ set of simple instructions. Limited they are, but the computer is still Turing complete and can compute pretty much anything. Although we have two major limitations which are its speed and the size of the RAM being only 16 bytes. Some people even argue that this computer isn't _really_ an 8Bit computer since it isn't able to address 256 bytes of memory and can't have an instruction set of more than 16. I think it'll do for now regardless of that.
 
 | Instruction  | Opcode | Description                                                    | Summary       |
@@ -180,7 +180,7 @@ Our computer has a _limited_ set of simple instructions. Limited they are, but t
 
 But, how does the CPU map which instructions use which micro-instructions on which cycle?
 
-### CPU Microcode
+## CPU Microcode
 For each instruction, we have five micro-instructions. We have a counter that counts from 0 to 4 for each instruction, thus allowing the computer to know which micro-instruction it is executing. Depending on which micro-instruction we're on and the instruction loaded, these values are used to address into an EEPROM. The EEPROM stores values that represent the signals we mentioned before.
 
 For example, we can program the EEPROMS with values such as the following to implement instructions.
@@ -200,7 +200,7 @@ You can see the full microcode on [Ben Eater's GitHub](https://github.com/beneat
 	Address into EEPROM + state of the Flags Register = control signal values
 
 
-### Your First 4043 Program
+## Your First 4043 Program
 Let's write a small 4043 program! How about a program that keeps adding 5 to the A register, outputs the result on the seven-segment display, and then halts execution once it goes past 255 (overflows)?
 
 {: style="text-align:center"}
@@ -218,7 +218,7 @@ Let's trace what happens in each micro-instruction!
 
 In the following animations, the LEDs at the bottom left indicate which micro-instruction we're executing. Each component of the computer has its control lines connected to the Control Unit. Look at the changes between each of the diagrams and it should map to what we discussed earlier.
 
-#### add 5
+### add 5
 This instruction in binary is `0010` (`add`), `0101` (`5`), making it `00100101`.
 
 {: style="text-align:center"}
@@ -229,7 +229,7 @@ We can see that in each micro-instruction, the control unit is enabling componen
 We still skip looking at `jc 4` because it isn't really that different from a `jmp`. The only difference is that `jc` will only work if the Carry flag is set.  Look at the `jmp 0` section and from there, you should be able to figure out how `jc` works.
 {:.warning}
 
-#### out
+### out
 For this instruction, we will skip _T_<sub>1</sub> and _T_<sub>2</sub> as they are the same for every instruction. All we're going to look at is _T_<sub>3</sub> to _T_<sub>5</sub>. As of the start of _T_<sub>3</sub>, the instruction has been fetched and is now in the instruction register and the program counter has been incremented. 
 
 This instruction in binary is `1110` (`out`) and the rest of the bits don't really matter but I like to set them to 0 when programming the computer, making it `11100000`.
@@ -239,7 +239,7 @@ This instruction in binary is `1110` (`out`) and the rest of the bits don't real
 
 In this instruction, after _T_<sub>3</sub>, the control unit isn't doing anything interesting. It already set the control lines at _T_<sub>3</sub> and the only remaining thing was the clock to pulse. That's why at _T_<sub>4</sub> we see the output module's display change to a 5.
 
-#### jmp 0
+### jmp 0
 For this instruction, we will also be skipping _T_<sub>1</sub> and _T_<sub>2</sub> as they are the same for every instruction. This instruction in binary is `0110` (`jmp`), `0000` (`0`), making it `01100000`.
 
 {: style="text-align:center"}
@@ -253,17 +253,17 @@ As we can see all this unconditional `jmp` does is load the specific address (0)
 {: style="text-align:center"}
 A picture of the `jmp` instruction, notice the `OUTI` and `LDPC` signals
 
-## The Build
+# The Build
 On days 8, 9, and 10, I built the EEPROM programmer, the output module, and the control unit.
 
-### Module 6: The EEPROM Programmer
+## Module 6: The EEPROM Programmer
 
 {: style="text-align:center"}
 ![EEPROM Programmer](/assets/images/8bit-computer-part3/eeprom_programmer.jpg)
 
 The EEPROM programmer is used to write values to the EEPROM easily using an Arduino. There wasn't much interesting about building this module. However, it was pretty useful and its Arduino code was easy to understand so modifying it was pretty easy. This module took a total of 2 and a half hrs. At this point, I had posted the [Day 7](https://twitter.com/aelmayyah/status/1641642040831143937) update on Twitter.
 
-### Module 7: The Output Module
+## Module 7: The Output Module
 
 {: style="text-align:center"}
 ![Fibonnaci output](/assets/images/8bit-computer-part3/fibonacci.gif)
@@ -282,7 +282,7 @@ I'd also like to mention that the wiring for this module was absolute hell. Reme
 
 This module took 4 hours and a half to build. At this point, we had reached [Day 8](https://twitter.com/aelmayyah/status/1641951812826611713) on Twitter.
 
-### Module 8: The Control Logic
+## Module 8: The Control Logic
 
 {: style="text-align:center"}
 ![The control logic](/assets/images/8bit-computer-part3/control_unit.jpg)
@@ -297,7 +297,7 @@ When connecting the control word, I connected them in a different order from wha
 Finally, this module spanned the 2 final updates of [Day 9](https://twitter.com/aelmayyah/status/1642717993623867393) and [Day 10](https://twitter.com/aelmayyah/status/1643133402910957568) on Twitter.
 
 
-## Conclusion
+# Conclusion
 The trilogy comes to an end! In this series, we talked about computer architecture, a little bit of electronics, and saw my journey of building The 4043: An 8Bit computer on a breadboard.
 
 With the project now finished, here is a picture of the finished build.
@@ -307,7 +307,7 @@ I also  filmed the following video to showcase the whole build and trace the exe
 
 <div>{%- include extensions/youtube.html id='bheSEQYWe5k' -%}</div>
 
-### Some Fun Facts
+## Some Fun Facts
 - The computer has 16 bytes of RAM
 - The computer draws 800mA from my power supply on idle
 - Overall, I used approximately 42 meters of wiring in this build
@@ -315,7 +315,7 @@ I also  filmed the following video to showcase the whole build and trace the exe
 - The build took a total build time of approximately 34 and a half hours. This excludes the time initially spent to research and plan, find chip replacements, and the things I learned the first time I attempted this project
 
 
-### Now What?
+## Now What?
 Well, for myself, I'll be taking a bit of a break because this series and the project were a lot of effort. As of writing this exact line, I start connecting the first chip and wire exactly 17 days ago.
 
 As for you, my dear reader, don't forget to also take a break and drink lots of water :)

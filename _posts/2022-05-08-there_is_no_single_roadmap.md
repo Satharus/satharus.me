@@ -28,7 +28,7 @@ I found this to be especially true for students between their freshmen year and 
 
 If you found yourself asking: "What's the point of learning something and then not finding it fun?". Well, just remember that knowledge is never useless and that it may, and probably will, come in handy later on. Especially that the tech industry is all connected in one way or another. Some small hack you learned from stackoverflow or some obscure old forum will probably come in handy a couple of years later when you're working late for a feature's deadline.
 
-### TL;DR
+## TL;DR
 There is no single roadmap that everyone should follow. Each person has their own path and their own experiences. All that matters is that you keep doing SOMETHING. Anything you learn moves you forward. Follow the advice of professionals and people you idolise, but don't think that just because you didn't follow their advice that your tech career is over!
 Doing *something* is always better than the endless cycle of planning and looking for the perfect learning path. Don't follow endless roadmaps that aren't really useful and waste a lot of time. Instead, look for what YOU want to learn and find interesting, and then let it lead you to your career path. If it doesn't, then congratulations! You learned something new anyway.
 

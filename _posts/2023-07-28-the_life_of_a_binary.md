@@ -20,7 +20,7 @@ cover: //assets/images/the-life-of-a-binary/the-life-of-a-binary_cover.jpg
 Programs... Binaries... PE Files... ELF Files... What are those? If you've read about computers at some point or even just used them, you've probably come across these terms. Today we'll take a look on how programs are built and the stages they go through.<!--more--> This post is a bit of a primer on knowledge required for multiple fields of software engineering and computer science. One of which is software reverse engineering, which I'll talk about in the next post.
 
 
-## Refresher: Trip to the Computer Class
+# Refresher: Trip to the Computer Class
 
 If you remember, back in primary school you were probably taught something like this:
 
@@ -40,7 +40,7 @@ A quick summary so that you can follow the upcoming parts, the processor (Centra
 
 e.g. The OS loads the program you just double clicked into memory, and the processor starts executing the instructions in that program.
 
-## The Birth of a Binary
+# The Birth of a Binary
 
 As mentioned a couple of times previously on this blog, computer programs are written in code. Programming languages such as C, C++, etc... This code is referred to as "Source Code", as it is the source from which the programs are born.
 
@@ -50,10 +50,10 @@ As mentioned a couple of times previously on this blog, computer programs are wr
 A PE file is a Portable Executable, a Windows format. Usually seen with extenstions .exe, .dll, etc... ELF is the Executable and Linkable Format on Linux. Usually seen without an extension or .so, .o, etc..
 {:.success}
 
-### The Compiler
+## The Compiler
 The source code files are passed to a compiler, which compiles the high-level human-written code into machine code. Instructions which can be executed by the CPU. Your CPU can't execute `x++` but it can execute `inc eax`, for example. What a compiler does is basically that. The result of the output from a compiler is an object file. A file containing machine code.
 
-### The Linker
+## The Linker
 When developers write code, they often use libraries which are basically code that has been written by someone else before for a specific purpose and then other developers can just reuse it in their code. Libraries contain functions, and functions are referenced in code by developers. For example:
 ```c
 #include <stdio.h>
@@ -71,7 +71,7 @@ This is where the linker comes in. The linker sees which references from other l
 
 But, how does the OS load this program and make it work?
 
-## The Life of a Binary
+# The Life of a Binary
 The OS reads the file, loads the content of it where it is appropriate for it to execute, and loads any libraries needed by the binary. Libraries, after all, are just programs. The only difference is that you can't double click and run them like normal programs.
 
 This is a very simple abstraction, but if I go into how programs are loaded and the actual structures of binary files, this post will be way too long and you will probably click off now. So, let's talk about it some other day over a cup of tea. For now, check the link to a course at the end of this post to get an idea on where you can learn more.
@@ -83,7 +83,7 @@ This is a very simple abstraction, but if I go into how programs are loaded and 
 
 That way, your program is now running and it has a process id (PID). What started as some Lines of Code (LoC) is now a running program with an id. Gosh, they grow up so quickly ![](/assets/images/the-life-of-a-binary/face.png).
 
-## The Compilation Process
+# The Compilation Process
 Let's take a bit of a deeper look on the whole process. We now have a high level understanding of how lines of code become a running program. Let's take a look under the hood and see the four stages of what a modern compiler like `gcc` for example would do.
 
 {: style="text-align:center"}
@@ -113,7 +113,7 @@ After it is assembled, it'll look like the machine code (in hex) on the right.
 
 The assembly is for demonstration only. Actual compiled code would look slightly different as it would not yet be linked. However, this code IS linked. 
 {:.warning}
-### Preprocessing
+## Preprocessing
 The preprocessor is a component of the compiler and it processes header files, macro expansions, conditional compilations, etc...
 For example, before preprocessing we can have a macro like this in our code:
 ```c
@@ -140,7 +140,7 @@ I think it is fine, as long as your code doesn't look like this.
 ![](/assets/images/the-life-of-a-binary/macros.jpg)
 
 
-### Compilation
+## Compilation
 The compilation process is taking the code produced by the preprocessor and compiling it into assmebly. You can run `gcc -S -masm=intel` and that will preprocess and compile your file only without assembling or linking it. This will show you how the assembly looks.
 
 {: style="text-align:center"}
@@ -148,7 +148,7 @@ The compilation process is taking the code produced by the preprocessor and comp
 
 This file on the right (hello.asm, the output of `gcc`) is purely human-readable assembly.
 
-### Assembly
+## Assembly
 The assembly process assembles the human-readable assembly code into a machine code binary. That binary still isn't executable as it hasn't been linked yet. However, it will contain very similar assembly instructions. You can run `gcc -c` which will preprocess, compile, and assemble the code only. No linking yet.
 
 {: style="text-align:center"}
@@ -167,7 +167,7 @@ tl;dr: Assembly is the human readable form of machine code.
 I _know_ that incrementing a variable `x` won't necessarily increment the register `eax`, please don't @me... This is a simplification.
 {:.info}
 
-### Linking
+## Linking
 The linker does the last step of the process. It links the binary file to the libraries it needs in order to run. You can run `gcc` without any flags and it will preprocess, compile, assemble, and link.
 
 {: style="text-align:center"}

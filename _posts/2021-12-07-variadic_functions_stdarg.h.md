@@ -30,7 +30,7 @@ int printf(const char *format, ...)
 {: style="text-align:center"} 
 `printf`'s function declaration.
 
-## Format Specifiers
+# Format Specifiers
 
 `const char *format` is the format string, it can contain pretty much any text you want, you just need to include a format specifier (which starts with %) for each variable you will pass to `printf` depending on how you want to represent the data.
 
@@ -80,7 +80,7 @@ Example: `int addNumbers(int n, ...);`
 - `va_arg(va_list, type)` which returns the next parameter as the specified type.
 - `va_end(va_list)` which cleans up the `va_list` object the user previously initialised.
 
-## addNumbers example
+# addNumbers example
 
 The following is an example of the previously mentioned `addNumbers(int n, ...)` function. While this is an overly complicated and meaningless usage of variadic functions, it is just an example.
 
@@ -118,7 +118,7 @@ int main()
 }
 ```
 
-## myprintf example
+# myprintf example
 
 Now, let's rewrite a small version of `printf` which supports strings (`%s`), characters (`%c`), and decimal numbers (`%d`). We will only focus on these data representations and also handle escaping `%` signs when calling `printf` by adding another percent sign: `%%`.
 

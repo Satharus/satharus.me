@@ -26,7 +26,7 @@ I recommend going to read the [first part](/tech/2023/04/05/8bit_computer_part1.
 
 In this post, we'll talk about the RAM (highlighted in cyan), the bus (highlighted in blue), and one of the parts of the control unit which is the program counter (top left).
 
-## Refresher
+# Refresher
 A quick refresher, we talked last time about the "bare minimum" computer which needs:
 - CPU: 
 	- Registers (✓)
@@ -43,12 +43,12 @@ A quick refresher, we talked last time about the "bare minimum" computer which n
 
 By now, we have an idea of how the clock syncs these modules together, how registers are used to store data, and how the ALU operates. Now, we have to ask ourselves: "What really is RAM?" and "What is RAM used for?".
 
-## Random Access Memory
+# Random Access Memory
 You may be reminded of your favourite Daft Punk album, but bear with me for a moment. Computers generally have two types of memory, volatile and non-volatile. Volatile memory such as RAM loses all of its content upon being powered off. Non-volatile memory such as ROM, NVRAM, and other types we won't get into stores data in a more permanent way and thus keeps its content after being powered off.
 
-### Why use RAM?
+## Why use RAM?
 Well, you may now be wondering, what is RAM used for? RAM is used to store mainly two things: code and data.
-#### Code
+### Code
 By code here I don't mean your C or Python lines of code. I mean computer instructions which are stored in binary. As an example, say you write in your C code: `x++`, which basically increments the `x` variable by 1.
 
 For simplicity's sake, let's assume that the CPU will somehow magically execute this code line using a single instruction. Assuming that you're using an Intel or AMD modern processor, which both use x86 architecture, we luckily have an instruction for that! 
@@ -62,7 +62,7 @@ The instruction is `inc`, which stands for increment and has an opcode of `0x41`
 <sup>[1]</sup> I _know_ that this opcode (`0x41`) is only for incrementing the `eax` register, not any `inc` instruction, please don't @me. I am trying to simplify things here. 
 {:.info}
 
-#### Data
+### Data
 Say you wanted to create a global variable for your program. Where does it get stored? It gets stored in RAM. Specifically, in a data segment. Modern computers divide RAM into segments, but let's not get into that. The bottom line is that data such as variables and constant values are also stored in RAM, not just program code.
 
 For example, let's assume you created a global variable: `int count`. A fixed address (fixed for the duration of the program's execution) in RAM will be decided by your OS to store the contents of that variable. Depending on the instructions being executed, the CPU may have to access this address in RAM to retrieve this value or to change it.
@@ -76,7 +76,7 @@ Cool, so, so far we got to know that RAM holds our code and data for the CPU to 
 
 And look no further, we are going to answer them right now!
 
-### The Role of Registers
+## The Role of Registers
 When a CPU wants to operate on data or decode and execute an instruction, it uses registers. For example, if you want to add a value to a variable stored in a memory location, the CPU would first read the value to a register, add to it, and then store it back in memory. 
 Same with code. To decode an instruction, it is loaded from memory into the instruction register. We will get into this in more detail in the next blog post.
 
@@ -85,12 +85,12 @@ Some modern CPUs have ways to directly operate on data in memory without having 
 
 Speaking of instruction decoding, how does a CPU know which address in memory to fetch code from?
 
-### The Reset Vector
+## The Reset Vector
 Each CPU is designed to have a reset vector. A reset vector is the default memory location the CPU will start fetching instructions from and executing them. For example, the original Intel 8086 CPU has a reset vector of `0xFFFF0`. Our simple breadboard computer has a reset vector of `0` which is the first location in memory.
 
 The CPU then needs a way to go fetch the next instruction after the first one has finished executing.
 
-### The Program Counter
+## The Program Counter
 A CPU would typically have some sort of counter or a register which stores the address for the command which is to be executed. For x86 processors for example we have the Instruction Pointer (`ip`/`eip`/`rip`) register for 16Bit, 32Bit, and 64Bit respectively.
 
 For our computer, we have a program counter (PC) which can count from 0 to 15, thus being able to address the 16 bytes of memory. Whenever an instruction is decoded, the program counter is incremented by one.
@@ -103,10 +103,10 @@ Bonus: Currently we're executing all instructions sequentially. I want you to tr
 
 Now that we know how the CPU operates on the code and data. How is it moved into these registers?
 
-## The Bus
+# The Bus
 The bus connects all of these together. If we want to move anything between any of these components we'd have to depend on the bus. A bus in general is just a way of communication between the components. In the case of our breadboard computer, it is a set of 8 connections (wires): one for each bit. Each component has a buffer or a load function which is used to connect and disconnect them from the bus in order to avoid loading unwanted values since it is a single common bus. If the modules aren't controlled properly, a value could be loaded into the wrong register or stored in the wrong address in memory. 
 
-### A Single Bus
+## A Single Bus
 The von Neumann architecture has only one bus that is used for data and code. So, typically, when you move data between modules, it has to be done in sequential steps and only the relevant components should be enabled to read from the bus or write to it. This is done by the control unit which we will discuss in the next part of this series.
 
 The figure below is an example of how a bus may work. This is a scenario where the user gave the CPU the instruction `ADD 0` which adds the value stored at memory address 0 to the A register. We'll get to assembly in the next blog post, but for now, this description is enough.
@@ -123,10 +123,10 @@ In the figure, we can see the following happen in order:
 
 This shows how a bus may work in a computer. In fact, this is exactly how our bus works in the 8Bit computer. Let's now take a look at how all of this is built on the breadboards.
 
-## The Build
+# The Build
 On days 5, 6, and 7, I built the RAM, the program counter, and started connecting the bus.
 
-### Module 4: The RAM
+## Module 4: The RAM
 
 {: style="text-align:center"}
 ![RAM](/assets/images/8bit-computer-part2/ram_module.jpg)
@@ -159,7 +159,7 @@ At this point, I had shared the [5th day's update](https://twitter.com/aelmayyah
 {: style="text-align:center"}
 ![LEDs](/assets/images/8bit-computer-part2/leds_before_after.jpg)
 
-### Module 5: The Program Counter
+## Module 5: The Program Counter
 
 {: style="text-align:center"}
 ![PC](/assets/images/8bit-computer-part2/pc.gif)
@@ -178,7 +178,7 @@ This is generally a very useful technique. Some people on forums and subreddits 
 
 By now, the [6th daily update](https://twitter.com/aelmayyah/status/1641248043172339712) was posted on Twitter. This module took approximately an hour to build.
 
-### Connecting the Bus
+## Connecting the Bus
 Connecting the bus wasn't hard at all. However, after connecting it, I realised that a lot of the time the registers would load the values correctly but then the most significant four bits would be always high. I soon realised that this was due to floating inputs to the 74LS245 bus transceiver chips. Connecting these inputs to ground fixed this issue.
 
 {: style="text-align:center"}
@@ -192,7 +192,7 @@ Connecting the bus took around an hour. After connecting the bus and finishing t
 
 <div>{%- include extensions/youtube.html id='8Tld0uJcfj8' -%}</div>
 
-## Conclusion
+# Conclusion
 We now have an idea of how code execution works in a computer, how data and code are moved between the modules, and how the computer keeps track of which instruction to execute. But, how does it understand the instructions? How do we program it? I'll answer these questions in the next post! We will get into how these modules are enabled/disabled according to the instructions and an example of how an output device works.
 
 In the days spanning from the 5th to the 7th, I built the RAM module, the program counter, and started playing around with the bus. The build now has an accumulated build time of 11 and a half plus 8 and a half. Which totalls to 20 hours.
