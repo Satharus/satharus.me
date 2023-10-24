@@ -118,6 +118,21 @@ int main()
 
 You may or may not have asked yourself before why we return `0`. Whether you did or not, I hope you found this post useful, fun to read, or both!
 
+# Bonus
+But, wait! There's a bonus :) Remember when I said that `main()` is just a function and can return _whatever_ you want? Can we make `main()` return `main()`? Pretty sure nothing can go wrong with that...
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    printf("Bad Recursion, Brb...\n");
+    return main();
+}
+```
+{: style="text-align:center"}
+![](/assets/images/exit-codes/brb.gif)
+
 If you liked this post, please share it with your friends who like returning `-1` instead of `255`.
 
 As always, thanks for reading.
