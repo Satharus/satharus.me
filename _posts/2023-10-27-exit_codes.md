@@ -62,7 +62,7 @@ void exitWithError()
 int main()
 {
 	exitWithError();
-	return 4;
+	return 0;
 }
 ```
 
