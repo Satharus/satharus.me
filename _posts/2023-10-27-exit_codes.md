@@ -48,7 +48,7 @@ You use an exit syscall. This differs between languages and OSs. However, Let's 
 
 On Linux, with the standard C library, you can call [`void exit(int status)`](https://en.cppreference.com/w/c/program/exit). This will exit the process and set the exit code to `status` which is the parameter given to it.
 
-It is worth nothing that returning from the main function does lead to an `exit()` call eventually as well.
+It is worth nothing that returning from the main function does eventually lead to an implicitly-called `exit()` as well.
 {:.info}
 
 ## Example
