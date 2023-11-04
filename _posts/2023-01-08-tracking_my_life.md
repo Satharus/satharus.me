@@ -46,6 +46,17 @@ When you log your days, you end up seeing something that looks kind of like this
 {: style="text-align:center"}
 ![Pixels July 2021](/assets/images/tracking-my-life/July_2021.png)
 
+## October 2023 Update! (Multiple moods per day)
+
+When I first published this blog post, some people asked me how each day's ending may affect the colour/pixel of the day. Say, for example. you had a good day but something bothered you at the end of it. What score do you give it? You don't want that thing in the end to make you biased towards labelling it as a completely bad day. But, at the same time, you want to know what bothers know and how much it affects your mood. 
+
+What I usually did is that I would average it out, and explain in the description/note for myself that the day started out fine but X bothered me. This would make me later able to search for X and see how much it averages out. So if the day was a 4/5, I would give it a 2 or a 3 and explain that in the description.
+
+However, quick update! As of version 1.2.1 (29 Oct 2023), you can now choose multiple moods on the same day based on how your mood fluctuates throughout the day. This solves this problem!
+
+{: style="text-align:center"}
+![October update](/assets/images/tracking-my-life/Update-Oct.png)
+
 # The Results
 After almost 3 years of collecting my own data (Sorry, Mr. Zuckerberg), I found some really good results. The results helped me generally understand myself better and also see some really interesting patterns. Sometimes, I am able to link the statistics with real life events and sometimes I'm not, which doesn't matter as in both cases I got to know the facts anyway.
 
