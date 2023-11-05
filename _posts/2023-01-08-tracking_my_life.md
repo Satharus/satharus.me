@@ -52,7 +52,7 @@ When I first published this blog post, some people asked me how each day's endin
 
 What I usually did is that I would average it out, and explain in the description/note for myself that the day started out fine but X bothered me. This would make me later able to search for X and see how much it averages out. So if the day was a 4/5, I would give it a 2 or a 3 and explain that in the description.
 
-However, quick update! As of version 1.2.1 (29 Oct 2023), you can now choose multiple moods on the same day based on how your mood fluctuates throughout the day. This solves this problem!
+However, quick update! As of version 1.2.1 (29 Oct 2023), you can now choose multiple moods on the same day based on how your mood fluctuates throughout the day. This solves the problem!
 
 {: style="text-align:center"}
 ![October update](/assets/images/tracking-my-life/Update-Oct.png)
