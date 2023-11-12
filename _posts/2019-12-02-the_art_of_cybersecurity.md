@@ -3,7 +3,7 @@ layout: article
 title: The Art of Cybersecurity (And how to get into it) 
 categories: [Cybersecurity]
 author: Ahmed Elmayyah
-tags: [Cybersecurity, Guide]
+tags: [Cybersecurity, Guide, Career]
 mode: normal 
 header:
   theme: dark
