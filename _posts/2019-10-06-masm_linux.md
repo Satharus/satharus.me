@@ -17,7 +17,7 @@ article_header:
 cover: /assets/images/masm-linux/masm_cover.jpg
 ---
 
-In this post I’ll be talking about how to run MASM alongside Irvine library on your Linux system. MASM and Irvine library are both requirements for the assembly language course at my college, and well, I am not a fan of Windows so here they are on Linux.
+In this post I’ll be talking about how to run MASM alongside Irvine library on your Linux system. MASM and Irvine library are both requirements for the assembly language course at my university, and well, I am not a fan of Windows so here they are on Linux.
 
 <!--more-->
 

@@ -29,7 +29,7 @@ If you remember, back in primary school you were probably taught something like 
 
 We use input devices such as a mouse and keyboard to make the computer process whatever we want and then the computer would give us some sort of output such as _something_ visual on a monitor or a sound.
 
-Then, at some point you may have been taught this in college if you studied CS or CE.
+Then, at some point you may have been taught this in university/college if you studied CS or CE.
 
 {: style="text-align:center"}
 ![Von Numann Architecture](/assets/images/the-life-of-a-binary/von_neumann.png)

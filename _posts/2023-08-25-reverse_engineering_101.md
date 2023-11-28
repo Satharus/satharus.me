@@ -173,7 +173,7 @@ You legally and ethically aren't allowed to reverse engineer everything in the w
 
 Make sure to check which regulations apply in your region of residence AND region of work and obviously make sure you follow them! You can also check out the [Electronic Frontier Foundation’s Reverse Engineering FAQs](https://www.eff.org/issues/coders/reverse-engineering-faq) for a US perspective on this.
 
-I am not a lawyer, don't take anything I say here as any form of legal advice. Do not trust me with any legal info.
+I am not a lawyer, don't take anything I say here as any form of legal advice.
 {:.warning}
 
 # Great, Where do I Learn More?
