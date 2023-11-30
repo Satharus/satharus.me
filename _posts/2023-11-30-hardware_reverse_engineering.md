@@ -189,9 +189,6 @@ A via is a connection between two or more layers of a PCB. It's usually a drille
 
 A seemingly small part that stands out is this silver thing connected between two of the ATmega's pins. We have no idea what that component is and it doesn't seem to have a very clear marking. However, using our multimeter and by looking at the traces, we can tell that they connect the silver components to pins `PB6` and `PB7` of the ATmega chip.
 
-## Multi-layer PCBs
-Since we mentioned vias, it is worth mentioning that not all boards are 2-layer PCBs like this Arduino here. Many boards have way more than two, especially more complex ones. So, "the other side", can be just a different layer that isn't the outer one on either side. Depending on the design, you may find only the power traces in the outer layers and all of the data traces in the middle. In that case, it'll require a bit more work :) For now, we'll stick to our simple 2-layer Arduino board!
-
 
 ## To the Datasheet!
 Looking at the pinout diagram from the datasheet, we can see that digital pins 0 through 11 (as well as 12 and 13, trust me!) are connected to what seem like I/O ports on the ATmega328P. Arduino pin 0 is connected to ATmega `PD0`, pin 1 to `PD1`, pin 2, to `PD2`, and so on. All the way until pin 8, which is actually connected to `PB0`, and then pin 9 is connected to `PB1`, and so on until we reach pin 13 which is connected to `PB5`.
@@ -204,6 +201,9 @@ But, what do these pins on the ATmega actually do?  If we check the datasheet, w
 They're both 8-bit bi-directional I/O ports. Cool! Now we know why they're connected to Arduino's digital pins. But, wait a minute... What about `PB6` and `PB7`?
 
 We can see under 1.1.3. Port B - PB6 and PB7 can be connected to a crystal oscillator. We now know what that silver component is :)!
+
+## Multi-layer PCBs
+Since we mentioned vias, it is worth mentioning that not all boards are double-layer PCBs like this Arduino here. Many boards have way more than two, especially more complex ones. So, "the other side", can be just a different layer that isn't the outer one on either side. Depending on the design, you may find only the power traces in the outer layers and all of the data traces in the middle. In that case, it'll require a bit more work :) For now, we'll stick to our simple double-layer Arduino board!
 
 # Step 4 Onwards
 At this point, you can do many things depending on what the goal of reverse engineering the hardware is. There are so many things you can do. It ranges from simply identifying the roles of the chips and drawing the schematic of the board, all the way to analysing what the electronic design of a chip on the board is internally. Let's take a look at some of the things we can do.
