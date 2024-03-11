@@ -164,7 +164,7 @@ At this point, I had shared the [5th day's update](https://twitter.com/aelmayyah
 {: style="text-align:center"}
 ![PC](/assets/images/8bit-computer-part2/pc.gif)
 
-The program counter was connected exactly like Ben's. No changes were made at all. However, something important that I have to note is that the first time I attempted this project, I left the clear pin for the 74LS161 chip floating which made it [behave very strangely](https://twitter.com/aelmayyah/status/1355469712059195393) and would often reset itself randomly. This made sense because
+The program counter was connected exactly like Ben's. No changes were made at all. However, something important that I have to note is that the first time I attempted this project, I left the clear pin for the 74LS161 chip floating which made it [behave very strangely](https://twitter.com/aelmayyah/status/1355469712059195393) and would often reset itself randomly. This made sense because:
 
 Floating input is the root of all evil.
 {:.error}
