@@ -26,7 +26,7 @@ Now imagine someone labels a person in the comments, and even though you may hav
 That's the moral of whatever I am trying to get to with this post. We try labelling ourselves with simple words, even seemingly innocent ones such as "introvert, extrovert, etc...". However, we are very complex beings and we can't be described with single words or labels.
 
 
-I noticed this pattern a lot on a lot of social media platforms and I really don't like it. I think that as humans, we should have better communication and less judgement. It has been quite a long time since I wrote such a short and simple post where I talk about some observations or my opinion on something. Anyway, the next time you're browsing the internet and come across a label. Ask yourself the following:
+I noticed this pattern a lot on a lot of social media platforms and I really don't like it. I think that as humans, we should have better communication and less judgement. Anyway, the next time you're browsing the internet and come across a label. Ask yourself the following:
  - Is it a description, or is it just a form of judgement?
  - Is it adding something constructive or is it purely an insult?
  - Do I agree with that _label_ or am I following the hive?
