@@ -150,6 +150,7 @@ Check out these 3 videos to get a general idea:
     - [Malware Analysis Tutorials, Cheatsheet & Tools list](https://gbhackers.com/malware-analysis-cheat-sheet-and-tools-list/)
     - [Android App Reverse Engineering 101](https://maddiestone.github.io/AndroidAppRE/)
     - [Reverse engineering Flutter apps](https://blog.tst.sh/reverse-engineering-flutter-apps-part-1/)
+    - [Reverse Engineering for Everyone!](https://0xinfection.github.io/reversing/)
     - [More Material](https://www.msreverseengineering.com/program-analysis-reading-list)
 
 Of course, that’s not all.
