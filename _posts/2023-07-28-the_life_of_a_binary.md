@@ -47,7 +47,7 @@ As mentioned a couple of times previously on this blog, computer programs are wr
 {: style="text-align:center"}
 ![](/assets/images/the-life-of-a-binary/birth.png)
 
-A PE file is a Portable Executable, a Windows format. Usually seen with extenstions .exe, .dll, etc... ELF is the Executable and Linkable Format on Linux. Usually seen without an extension or .so, .o, etc..
+A PE file is a Portable Executable, a Windows format. Usually seen with extensions .exe, .dll, etc... ELF is the Executable and Linkable Format on Linux. Usually seen without an extension or .so, .o, etc..
 {:.success}
 
 ## The Compiler
